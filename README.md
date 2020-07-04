@@ -35,3 +35,6 @@ based on and developed from:
 * real-time engine LOS (likelihood of superiority) calculation
 
 ![alt tag](https://raw.githubusercontent.com/FireFather/Zentropy/master/capture.png)
+
+## ICons:
+* "Icon made by Pixel perfect from www.flaticon.com"

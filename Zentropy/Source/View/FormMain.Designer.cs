@@ -80,6 +80,11 @@
             this._buttonAutoPlay = new System.Windows.Forms.Button();
             this._buttonMoveNow = new System.Windows.Forms.Button();
             this._buttonNewGame = new System.Windows.Forms.Button();
+            this._panelNavButtons = new System.Windows.Forms.Panel();
+            this._buttonGoToStart = new System.Windows.Forms.Button();
+            this._buttonGoToEnd = new System.Windows.Forms.Button();
+            this._buttonGoForward = new System.Windows.Forms.Button();
+            this._buttonGoBack = new System.Windows.Forms.Button();
             this._splitContainerBoard = new System.Windows.Forms.SplitContainer();
             this._panelResultBox = new System.Windows.Forms.Panel();
             this._panelTermination = new System.Windows.Forms.Panel();
@@ -116,11 +121,6 @@
             this._dataGridViewMoves = new System.Windows.Forms.DataGridView();
             this._whiteMove = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._blackMove = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._panelNavButtons = new System.Windows.Forms.Panel();
-            this._buttonGoToStart = new System.Windows.Forms.Button();
-            this._buttonGoToEnd = new System.Windows.Forms.Button();
-            this._buttonGoForward = new System.Windows.Forms.Button();
-            this._buttonGoBack = new System.Windows.Forms.Button();
             this._dataGridViewEvaluation = new System.Windows.Forms.DataGridView();
             this._menuItemGame = new System.Windows.Forms.ToolStripMenuItem();
             this._menuItemGameNew = new System.Windows.Forms.ToolStripMenuItem();
@@ -187,6 +187,7 @@
             this._panelMatchInfo.SuspendLayout();
             this._tableLayoutPanelMatchInfo.SuspendLayout();
             this._panelButtons.SuspendLayout();
+            this._panelNavButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._splitContainerBoard)).BeginInit();
             this._splitContainerBoard.Panel2.SuspendLayout();
             this._splitContainerBoard.SuspendLayout();
@@ -204,7 +205,6 @@
             this._tableLayoutPanelEvalInfo.SuspendLayout();
             this._tableEvaluationChart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewMoves)).BeginInit();
-            this._panelNavButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewEvaluation)).BeginInit();
             this._menuStripMain.SuspendLayout();
             this.SuspendLayout();
@@ -286,15 +286,17 @@
             // _panelLeft
             // 
             this._panelLeft.AutoSize = true;
-            this._panelLeft.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this._panelLeft.BackColor = System.Drawing.SystemColors.Control;
             this._panelLeft.Controls.Add(this._tableLayoutPanelEngineMatch);
             this._panelLeft.Controls.Add(this._panelMatchInfo);
             this._panelLeft.Controls.Add(this._panelButtons);
+            this._panelLeft.Controls.Add(this._panelNavButtons);
             this._panelLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this._panelLeft.Font = new System.Drawing.Font("Verdana", 9F);
             this._panelLeft.Location = new System.Drawing.Point(0, 0);
             this._panelLeft.Margin = new System.Windows.Forms.Padding(0);
+            this._panelLeft.MaximumSize = new System.Drawing.Size(281, 825);
+            this._panelLeft.MinimumSize = new System.Drawing.Size(281, 825);
             this._panelLeft.Name = "_panelLeft";
             this._panelLeft.Size = new System.Drawing.Size(281, 825);
             this._panelLeft.TabIndex = 5;
@@ -754,8 +756,10 @@
             this._panelButtons.Controls.Add(this._buttonNewGame);
             this._panelButtons.Location = new System.Drawing.Point(19, 18);
             this._panelButtons.Margin = new System.Windows.Forms.Padding(0);
+            this._panelButtons.MaximumSize = new System.Drawing.Size(240, 105);
+            this._panelButtons.MinimumSize = new System.Drawing.Size(240, 105);
             this._panelButtons.Name = "_panelButtons";
-            this._panelButtons.Size = new System.Drawing.Size(239, 105);
+            this._panelButtons.Size = new System.Drawing.Size(240, 105);
             this._panelButtons.TabIndex = 18;
             // 
             // _buttonSound
@@ -934,6 +938,109 @@
             this._toolTipNewGame.SetToolTip(this._buttonNewGame, "Reset the board and start a new game\r\n");
             this._buttonNewGame.UseVisualStyleBackColor = false;
             this._buttonNewGame.Click += new System.EventHandler(this.OnMenuItemNewGameClick);
+            // 
+            // _panelNavButtons
+            // 
+            this._panelNavButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this._panelNavButtons.Controls.Add(this._buttonGoToStart);
+            this._panelNavButtons.Controls.Add(this._buttonGoToEnd);
+            this._panelNavButtons.Controls.Add(this._buttonGoForward);
+            this._panelNavButtons.Controls.Add(this._buttonGoBack);
+            this._panelNavButtons.Location = new System.Drawing.Point(21, 149);
+            this._panelNavButtons.Margin = new System.Windows.Forms.Padding(0);
+            this._panelNavButtons.MaximumSize = new System.Drawing.Size(240, 32);
+            this._panelNavButtons.MinimumSize = new System.Drawing.Size(240, 32);
+            this._panelNavButtons.Name = "_panelNavButtons";
+            this._panelNavButtons.Size = new System.Drawing.Size(240, 32);
+            this._panelNavButtons.TabIndex = 19;
+            // 
+            // _buttonGoToStart
+            // 
+            this._buttonGoToStart.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this._buttonGoToStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._buttonGoToStart.BackColor = System.Drawing.Color.Transparent;
+            this._buttonGoToStart.BackgroundImage = global::Zentropy.Properties.Resources.Start;
+            this._buttonGoToStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._buttonGoToStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._buttonGoToStart.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this._buttonGoToStart.FlatAppearance.BorderSize = 0;
+            this._buttonGoToStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonGoToStart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonGoToStart.Location = new System.Drawing.Point(40, 2);
+            this._buttonGoToStart.Margin = new System.Windows.Forms.Padding(0);
+            this._buttonGoToStart.Name = "_buttonGoToStart";
+            this._buttonGoToStart.Size = new System.Drawing.Size(30, 30);
+            this._buttonGoToStart.TabIndex = 3;
+            this._buttonGoToStart.TabStop = false;
+            this._toolTipStart.SetToolTip(this._buttonGoToStart, "Go to start");
+            this._buttonGoToStart.UseVisualStyleBackColor = false;
+            this._buttonGoToStart.Click += new System.EventHandler(this.OnButtonStartClick);
+            // 
+            // _buttonGoToEnd
+            // 
+            this._buttonGoToEnd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._buttonGoToEnd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._buttonGoToEnd.BackColor = System.Drawing.Color.Transparent;
+            this._buttonGoToEnd.BackgroundImage = global::Zentropy.Properties.Resources.End;
+            this._buttonGoToEnd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._buttonGoToEnd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._buttonGoToEnd.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this._buttonGoToEnd.FlatAppearance.BorderSize = 0;
+            this._buttonGoToEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonGoToEnd.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonGoToEnd.Location = new System.Drawing.Point(160, 2);
+            this._buttonGoToEnd.Margin = new System.Windows.Forms.Padding(0);
+            this._buttonGoToEnd.Name = "_buttonGoToEnd";
+            this._buttonGoToEnd.Size = new System.Drawing.Size(30, 30);
+            this._buttonGoToEnd.TabIndex = 6;
+            this._buttonGoToEnd.TabStop = false;
+            this._toolTipGoToEnd.SetToolTip(this._buttonGoToEnd, "Go to end");
+            this._buttonGoToEnd.UseVisualStyleBackColor = false;
+            this._buttonGoToEnd.Click += new System.EventHandler(this.OnButtonEndClick);
+            // 
+            // _buttonGoForward
+            // 
+            this._buttonGoForward.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._buttonGoForward.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._buttonGoForward.BackColor = System.Drawing.Color.Transparent;
+            this._buttonGoForward.BackgroundImage = global::Zentropy.Properties.Resources.Forward;
+            this._buttonGoForward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._buttonGoForward.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._buttonGoForward.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this._buttonGoForward.FlatAppearance.BorderSize = 0;
+            this._buttonGoForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonGoForward.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonGoForward.Location = new System.Drawing.Point(120, 2);
+            this._buttonGoForward.Margin = new System.Windows.Forms.Padding(0);
+            this._buttonGoForward.Name = "_buttonGoForward";
+            this._buttonGoForward.Size = new System.Drawing.Size(30, 30);
+            this._buttonGoForward.TabIndex = 4;
+            this._buttonGoForward.TabStop = false;
+            this._toolTipGoForward.SetToolTip(this._buttonGoForward, "Go forward one move");
+            this._buttonGoForward.UseVisualStyleBackColor = false;
+            this._buttonGoForward.Click += new System.EventHandler(this.OnButtonForwardClick);
+            // 
+            // _buttonGoBack
+            // 
+            this._buttonGoBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._buttonGoBack.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._buttonGoBack.BackColor = System.Drawing.Color.Transparent;
+            this._buttonGoBack.BackgroundImage = global::Zentropy.Properties.Resources.Back;
+            this._buttonGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._buttonGoBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._buttonGoBack.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this._buttonGoBack.FlatAppearance.BorderSize = 0;
+            this._buttonGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonGoBack.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonGoBack.Location = new System.Drawing.Point(80, 2);
+            this._buttonGoBack.Margin = new System.Windows.Forms.Padding(0);
+            this._buttonGoBack.Name = "_buttonGoBack";
+            this._buttonGoBack.Size = new System.Drawing.Size(30, 30);
+            this._buttonGoBack.TabIndex = 5;
+            this._buttonGoBack.TabStop = false;
+            this.toolTipGoBack.SetToolTip(this._buttonGoBack, "Go back one move");
+            this._buttonGoBack.UseVisualStyleBackColor = false;
+            this._buttonGoBack.Click += new System.EventHandler(this.OnButtonBackClick);
             // 
             // _splitContainerBoard
             // 
@@ -1177,7 +1284,6 @@
             this._panelRight.Controls.Add(this._panelEvalTable);
             this._panelRight.Controls.Add(this._tableEvaluationChart);
             this._panelRight.Controls.Add(this._dataGridViewMoves);
-            this._panelRight.Controls.Add(this._panelNavButtons);
             this._panelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this._panelRight.Font = new System.Drawing.Font("Verdana", 8F);
             this._panelRight.Location = new System.Drawing.Point(1, 0);
@@ -1436,107 +1542,6 @@
             this._blackMove.FillWeight = 47F;
             this._blackMove.HeaderText = "Black Move";
             this._blackMove.Name = "_blackMove";
-            // 
-            // _panelNavButtons
-            // 
-            this._panelNavButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this._panelNavButtons.Controls.Add(this._buttonGoToStart);
-            this._panelNavButtons.Controls.Add(this._buttonGoToEnd);
-            this._panelNavButtons.Controls.Add(this._buttonGoForward);
-            this._panelNavButtons.Controls.Add(this._buttonGoBack);
-            this._panelNavButtons.Location = new System.Drawing.Point(16, 205);
-            this._panelNavButtons.Margin = new System.Windows.Forms.Padding(0);
-            this._panelNavButtons.Name = "_panelNavButtons";
-            this._panelNavButtons.Size = new System.Drawing.Size(314, 30);
-            this._panelNavButtons.TabIndex = 19;
-            // 
-            // _buttonGoToStart
-            // 
-            this._buttonGoToStart.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._buttonGoToStart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this._buttonGoToStart.BackColor = System.Drawing.Color.Transparent;
-            this._buttonGoToStart.BackgroundImage = global::Zentropy.Properties.Resources.Start;
-            this._buttonGoToStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._buttonGoToStart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._buttonGoToStart.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this._buttonGoToStart.FlatAppearance.BorderSize = 0;
-            this._buttonGoToStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonGoToStart.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._buttonGoToStart.Location = new System.Drawing.Point(77, 1);
-            this._buttonGoToStart.Margin = new System.Windows.Forms.Padding(0);
-            this._buttonGoToStart.Name = "_buttonGoToStart";
-            this._buttonGoToStart.Size = new System.Drawing.Size(40, 28);
-            this._buttonGoToStart.TabIndex = 3;
-            this._buttonGoToStart.TabStop = false;
-            this._toolTipStart.SetToolTip(this._buttonGoToStart, "Go to start");
-            this._buttonGoToStart.UseVisualStyleBackColor = false;
-            this._buttonGoToStart.Click += new System.EventHandler(this.OnButtonStartClick);
-            // 
-            // _buttonGoToEnd
-            // 
-            this._buttonGoToEnd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._buttonGoToEnd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this._buttonGoToEnd.BackColor = System.Drawing.Color.Transparent;
-            this._buttonGoToEnd.BackgroundImage = global::Zentropy.Properties.Resources.End;
-            this._buttonGoToEnd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._buttonGoToEnd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._buttonGoToEnd.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this._buttonGoToEnd.FlatAppearance.BorderSize = 0;
-            this._buttonGoToEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonGoToEnd.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._buttonGoToEnd.Location = new System.Drawing.Point(197, 1);
-            this._buttonGoToEnd.Margin = new System.Windows.Forms.Padding(0);
-            this._buttonGoToEnd.Name = "_buttonGoToEnd";
-            this._buttonGoToEnd.Size = new System.Drawing.Size(40, 28);
-            this._buttonGoToEnd.TabIndex = 6;
-            this._buttonGoToEnd.TabStop = false;
-            this._toolTipGoToEnd.SetToolTip(this._buttonGoToEnd, "Go to end");
-            this._buttonGoToEnd.UseVisualStyleBackColor = false;
-            this._buttonGoToEnd.Click += new System.EventHandler(this.OnButtonEndClick);
-            // 
-            // _buttonGoForward
-            // 
-            this._buttonGoForward.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._buttonGoForward.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this._buttonGoForward.BackColor = System.Drawing.Color.Transparent;
-            this._buttonGoForward.BackgroundImage = global::Zentropy.Properties.Resources.Forward;
-            this._buttonGoForward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._buttonGoForward.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._buttonGoForward.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this._buttonGoForward.FlatAppearance.BorderSize = 0;
-            this._buttonGoForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonGoForward.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._buttonGoForward.Location = new System.Drawing.Point(161, 1);
-            this._buttonGoForward.Margin = new System.Windows.Forms.Padding(0);
-            this._buttonGoForward.Name = "_buttonGoForward";
-            this._buttonGoForward.Size = new System.Drawing.Size(28, 28);
-            this._buttonGoForward.TabIndex = 4;
-            this._buttonGoForward.TabStop = false;
-            this._toolTipGoForward.SetToolTip(this._buttonGoForward, "Go forward one move");
-            this._buttonGoForward.UseVisualStyleBackColor = false;
-            this._buttonGoForward.Click += new System.EventHandler(this.OnButtonForwardClick);
-            // 
-            // _buttonGoBack
-            // 
-            this._buttonGoBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._buttonGoBack.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this._buttonGoBack.BackColor = System.Drawing.Color.Transparent;
-            this._buttonGoBack.BackgroundImage = global::Zentropy.Properties.Resources.Back;
-            this._buttonGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._buttonGoBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._buttonGoBack.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this._buttonGoBack.FlatAppearance.BorderSize = 0;
-            this._buttonGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonGoBack.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._buttonGoBack.Location = new System.Drawing.Point(125, 1);
-            this._buttonGoBack.Margin = new System.Windows.Forms.Padding(0);
-            this._buttonGoBack.Name = "_buttonGoBack";
-            this._buttonGoBack.Size = new System.Drawing.Size(28, 28);
-            this._buttonGoBack.TabIndex = 5;
-            this._buttonGoBack.TabStop = false;
-            this.toolTipGoBack.SetToolTip(this._buttonGoBack, "Go back one move");
-            this._buttonGoBack.UseVisualStyleBackColor = false;
-            this._buttonGoBack.Click += new System.EventHandler(this.OnButtonBackClick);
             // 
             // _dataGridViewEvaluation
             // 
@@ -1963,6 +1968,7 @@
             this._panelMatchInfo.ResumeLayout(false);
             this._tableLayoutPanelMatchInfo.ResumeLayout(false);
             this._panelButtons.ResumeLayout(false);
+            this._panelNavButtons.ResumeLayout(false);
             this._splitContainerBoard.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._splitContainerBoard)).EndInit();
             this._splitContainerBoard.ResumeLayout(false);
@@ -1980,7 +1986,6 @@
             this._tableLayoutPanelEvalInfo.ResumeLayout(false);
             this._tableEvaluationChart.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewMoves)).EndInit();
-            this._panelNavButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewEvaluation)).EndInit();
             this._menuStripMain.ResumeLayout(false);
             this._menuStripMain.PerformLayout();
