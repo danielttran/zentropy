@@ -59,11 +59,11 @@
             // 
             this._labelVersion.AutoSize = true;
             this._labelVersion.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelVersion.Location = new System.Drawing.Point(249, 88);
+            this._labelVersion.Location = new System.Drawing.Point(241, 87);
             this._labelVersion.Name = "_labelVersion";
-            this._labelVersion.Size = new System.Drawing.Size(142, 17);
+            this._labelVersion.Size = new System.Drawing.Size(151, 17);
             this._labelVersion.TabIndex = 7;
-            this._labelVersion.Text = "Version 4-15-2019";
+            this._labelVersion.Text = "Version 07-04-2020";
             // 
             // _labelChessEngineInterface
             // 
@@ -112,9 +112,9 @@
             this._labelBy.Font = new System.Drawing.Font("Verdana", 9F);
             this._labelBy.Location = new System.Drawing.Point(17, 310);
             this._labelBy.Name = "_labelBy";
-            this._labelBy.Size = new System.Drawing.Size(161, 14);
+            this._labelBy.Size = new System.Drawing.Size(299, 14);
             this._labelBy.TabIndex = 13;
-            this._labelBy.Text = "by firefather@telenet.be";
+            this._labelBy.Text = "by firefather@telenet.be, tutran.cs@gmail.com";
             // 
             // _groupBoxBasedOn
             // 
