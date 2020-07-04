@@ -276,7 +276,7 @@
             // 
             // _splitContainer2.Panel2
             // 
-            this._splitContainer2.Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this._splitContainer2.Panel2.BackColor = System.Drawing.Color.Transparent;
             this._splitContainer2.Panel2.Controls.Add(this._splitContainerBoard);
             this._splitContainer2.Panel2.Controls.Add(this._panelWhiteSide);
             this._splitContainer2.Panel2.Controls.Add(this._panelBlackSide);
@@ -287,7 +287,7 @@
             // _panelLeft
             // 
             this._panelLeft.AutoSize = true;
-            this._panelLeft.BackColor = System.Drawing.SystemColors.Control;
+            this._panelLeft.BackColor = System.Drawing.Color.Transparent;
             this._panelLeft.Controls.Add(this._panelEvalTable);
             this._panelLeft.Controls.Add(this._tableLayoutPanelEngineMatch);
             this._panelLeft.Controls.Add(this._panelMatchInfo);
@@ -1059,7 +1059,7 @@
             // 
             // _splitContainerBoard.Panel2
             // 
-            this._splitContainerBoard.Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this._splitContainerBoard.Panel2.BackColor = System.Drawing.Color.Transparent;
             this._splitContainerBoard.Panel2.Controls.Add(this._panelResultBox);
             this._splitContainerBoard.Panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._toolTipExit.SetToolTip(this._splitContainerBoard.Panel2, "Close and exit the application");
@@ -1236,7 +1236,7 @@
             // _panelBlackTime
             // 
             this._panelBlackTime.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this._panelBlackTime.BackColor = System.Drawing.SystemColors.Control;
+            this._panelBlackTime.BackColor = System.Drawing.Color.Transparent;
             this._panelBlackTime.Controls.Add(this._labelBlackTime);
             this._panelBlackTime.ForeColor = System.Drawing.Color.Black;
             this._panelBlackTime.Location = new System.Drawing.Point(394, 18);
@@ -1277,7 +1277,7 @@
             // _panelRight
             // 
             this._panelRight.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this._panelRight.BackColor = System.Drawing.SystemColors.Control;
+            this._panelRight.BackColor = System.Drawing.Color.Transparent;
             this._panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelRight.Controls.Add(this._panelEvaluationChart);
             this._panelRight.Controls.Add(this._dataGridViewMoves);
@@ -1597,7 +1597,7 @@
             // _menuItemGameNew
             // 
             this._menuItemGameNew.Name = "_menuItemGameNew";
-            this._menuItemGameNew.Size = new System.Drawing.Size(133, 22);
+            this._menuItemGameNew.Size = new System.Drawing.Size(180, 22);
             this._menuItemGameNew.Tag = "";
             this._menuItemGameNew.Text = "New";
             this._menuItemGameNew.Click += new System.EventHandler(this.OnMenuItemNewGameClick);
@@ -1605,7 +1605,7 @@
             // _menuItemGameOptions
             // 
             this._menuItemGameOptions.Name = "_menuItemGameOptions";
-            this._menuItemGameOptions.Size = new System.Drawing.Size(133, 22);
+            this._menuItemGameOptions.Size = new System.Drawing.Size(180, 22);
             this._menuItemGameOptions.Text = "Options";
             this._menuItemGameOptions.Click += new System.EventHandler(this.OnMenuItemGameOptionsClick);
             // 

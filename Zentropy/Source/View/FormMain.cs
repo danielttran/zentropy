@@ -197,6 +197,7 @@ namespace Zentropy.View
                 Size = new Size(787, 403),
                 Game = _vm.Game
             };
+            _chessPanel.BackColor = Color.Transparent;
             _chessPanel.Select();
             _chessPanel.PieceMoved += OnPieceMoved;
             _splitContainerBoard.Panel2.Controls.Add(_chessPanel);

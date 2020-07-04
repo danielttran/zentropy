@@ -88,7 +88,7 @@ namespace Zentropy.Model
         [XmlIgnore] public Color DarkModeBackColor { get; set; } = Color.Black;
         [XmlIgnore] public Color DarkModeForeColor { get; set; } = Color.White;
 
-        [XmlIgnore] public Color WhiteModeBackColor { get; set; } = Color.WhiteSmoke;
+        [XmlIgnore] public Color WhiteModeBackColor { get; set; } = Color.White;
         [XmlIgnore] public Color WhiteModeForeColor { get; set; } = Color.Black;
 
         private SerializedInfo() { }
