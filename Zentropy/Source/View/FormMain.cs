@@ -2259,10 +2259,13 @@ namespace Zentropy.View
             List<Control> controls = GetAllChildControls(control).ToList();
             controls.Add(this);
 
-            List<ToolStripMenuItem> menuItems = GetMenuItems(_menuStripMain).ToList();
-
             for (int i = 0; i < controls.Count; i++)
             {
+                if(controls[i] is Button)
+                {
+                    continue;
+                }
+
                 if (darkMode)
                 {
                     controls[i].BackColor = SerializedInfo.Instance.DarkModeBackColor;
@@ -2311,7 +2314,9 @@ namespace Zentropy.View
                 _buttonFlipBoard.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
                 _buttonSound.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
             }
-            
+
+            List<ToolStripMenuItem> menuItems = GetMenuItems(_menuStripMain).ToList();
+
             for (int i = 0; i < menuItems.Count; i++)
             {
                 if (darkMode)
