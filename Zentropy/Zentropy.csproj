@@ -308,7 +308,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Images\Arrows\back.png" />
-    <Content Include="Resources\Images\Arrows\button.png" />
     <Content Include="Resources\Images\Arrows\end.png" />
     <Content Include="Resources\Images\Arrows\forward.png" />
     <Content Include="Resources\Images\Arrows\start.png" />
