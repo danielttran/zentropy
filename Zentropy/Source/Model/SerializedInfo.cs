@@ -84,6 +84,13 @@ namespace Zentropy.Model
         [XmlIgnore] public Color LightSquareColor { get; set; } = Color.FromArgb(238, 238, 210);
         [XmlIgnore] public Color HighlightLastmoveColor { get; set; } = Color.FromArgb(255, 255, 128);
 
+        // color for white and dark modes
+        [XmlIgnore] public Color DarkModeBackColor { get; set; } = Color.Black;
+        [XmlIgnore] public Color DarkModeForeColor { get; set; } = Color.White;
+
+        [XmlIgnore] public Color WhiteModeBackColor { get; set; } = Color.WhiteSmoke;
+        [XmlIgnore] public Color WhiteModeForeColor { get; set; } = Color.Black;
+
         private SerializedInfo() { }
     }
 }

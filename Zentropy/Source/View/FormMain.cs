@@ -2260,13 +2260,13 @@ namespace Zentropy.View
             {
                 if (darkMode)
                 {
-                    controls[i].BackColor = Color.Black;
-                    controls[i].ForeColor = Color.White;
+                    controls[i].BackColor = SerializedInfo.Instance.DarkModeBackColor;
+                    controls[i].ForeColor = SerializedInfo.Instance.DarkModeForeColor;
                 }
                 else
                 {
                     controls[i].BackColor = (Color)controls[i].Tag;
-                    controls[i].ForeColor = Color.Black;
+                    controls[i].ForeColor = SerializedInfo.Instance.WhiteModeForeColor;
                 }
 
                 if (controls[i] is DataGridView grid)
@@ -2274,9 +2274,9 @@ namespace Zentropy.View
                     if (darkMode)
                     {
                         grid.BorderStyle = BorderStyle.Fixed3D;					
-                        grid.BackgroundColor = Color.Black;
-                        grid.DefaultCellStyle.BackColor = Color.Black;
-                        grid.DefaultCellStyle.ForeColor = Color.White;
+                        grid.BackgroundColor = SerializedInfo.Instance.DarkModeBackColor;
+                        grid.DefaultCellStyle.BackColor = SerializedInfo.Instance.DarkModeBackColor;
+                        grid.DefaultCellStyle.ForeColor = SerializedInfo.Instance.DarkModeForeColor;
                         grid.DefaultCellStyle.SelectionForeColor = Color.White;
                         grid.DefaultCellStyle.SelectionBackColor = Color.FromArgb(222, 227, 230).AlterRgb(150, false);
                     }
@@ -2284,9 +2284,9 @@ namespace Zentropy.View
                     {
                         grid.BorderStyle = BorderStyle.FixedSingle;
                         grid.BackgroundColor = Color.White;
-                        grid.DefaultCellStyle.BackColor = Color.White;
-                        grid.DefaultCellStyle.ForeColor = Color.Black;
-                        grid.DefaultCellStyle.SelectionForeColor = Color.Black;
+                        grid.DefaultCellStyle.BackColor = SerializedInfo.Instance.WhiteModeBackColor;
+                        grid.DefaultCellStyle.ForeColor = SerializedInfo.Instance.WhiteModeForeColor;
+                        grid.DefaultCellStyle.SelectionForeColor = SerializedInfo.Instance.WhiteModeForeColor;
                         grid.DefaultCellStyle.SelectionBackColor = Color.FromArgb(222, 227, 230);
                     }
                 }
@@ -2297,27 +2297,27 @@ namespace Zentropy.View
             }
             else
             {
-                _buttonNewGame.ForeColor = Color.White;
-                _buttonAutoPlay.ForeColor = Color.White;
-                _buttonMoveNow.ForeColor = Color.White;
-                _buttonExit.ForeColor = Color.White;
-                _buttonCopyFEN.ForeColor = Color.White;
-                _buttonPasteFEN.ForeColor = Color.White;
-                _buttonFlipBoard.ForeColor = Color.White;
-                _buttonSound.ForeColor = Color.White;
+                _buttonNewGame.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
+                _buttonAutoPlay.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
+                _buttonMoveNow.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
+                _buttonExit.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
+                _buttonCopyFEN.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
+                _buttonPasteFEN.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
+                _buttonFlipBoard.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
+                _buttonSound.ForeColor = SerializedInfo.Instance.WhiteModeBackColor;
             }
             
             for (int i = 0; i < menuItems.Count; i++)
             {
                 if (darkMode)
                 {
-                    menuItems[i].BackColor = Color.Black;
-                    menuItems[i].ForeColor = Color.White;
+                    menuItems[i].BackColor = SerializedInfo.Instance.DarkModeBackColor;
+                    menuItems[i].ForeColor = SerializedInfo.Instance.DarkModeForeColor;
                 }
                 else
                 {
                     menuItems[i].BackColor = Color.LightGray;
-                    menuItems[i].ForeColor = Color.Black;
+                    menuItems[i].ForeColor = SerializedInfo.Instance.WhiteModeForeColor;
                 }
             }
         }
