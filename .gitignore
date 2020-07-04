@@ -360,3 +360,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ChessEngineInterface/bin/Debug/*
+/ChessEngineInterface/bin/Release/*
