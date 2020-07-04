@@ -100,7 +100,6 @@
             this._splitContainerBoard = new System.Windows.Forms.SplitContainer();
             this._panelResultBox = new System.Windows.Forms.Panel();
             this._panelTermination = new System.Windows.Forms.Panel();
-            this._labelGameTermination = new System.Windows.Forms.Label();
             this._panelResult = new System.Windows.Forms.Panel();
             this._labelGameResult = new System.Windows.Forms.Label();
             this._panelWhiteSide = new System.Windows.Forms.Panel();
@@ -170,6 +169,7 @@
             this._toolTipPasteFEN = new System.Windows.Forms.ToolTip(this.components);
             this._toolTipSound = new System.Windows.Forms.ToolTip(this.components);
             this._toolTipFlipBoard = new System.Windows.Forms.ToolTip(this.components);
+            this._labelGameTermination = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._splitContainer1)).BeginInit();
             this._splitContainer1.Panel1.SuspendLayout();
             this._splitContainer1.Panel2.SuspendLayout();
@@ -223,7 +223,10 @@
             // 
             // _splitContainer1
             // 
-            this._splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._splitContainer1.BackColor = System.Drawing.Color.Transparent;
             this._splitContainer1.Location = new System.Drawing.Point(5, 47);
             this._splitContainer1.Margin = new System.Windows.Forms.Padding(0);
             this._splitContainer1.Name = "_splitContainer1";
@@ -231,6 +234,7 @@
             // 
             // _splitContainer1.Panel1
             // 
+            this._splitContainer1.Panel1.BackColor = System.Drawing.Color.Transparent;
             this._splitContainer1.Panel1.Controls.Add(this._splitContainerMain);
             // 
             // _splitContainer1.Panel2
@@ -243,6 +247,7 @@
             // 
             // _splitContainerMain
             // 
+            this._splitContainerMain.BackColor = System.Drawing.Color.Transparent;
             this._splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this._splitContainerMain.Location = new System.Drawing.Point(0, 0);
             this._splitContainerMain.Margin = new System.Windows.Forms.Padding(0);
@@ -250,6 +255,7 @@
             // 
             // _splitContainerMain.Panel1
             // 
+            this._splitContainerMain.Panel1.BackColor = System.Drawing.Color.Transparent;
             this._splitContainerMain.Panel1.Controls.Add(this._splitContainer2);
             // 
             // _splitContainerMain.Panel2
@@ -264,19 +270,19 @@
             this._splitContainer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._splitContainer2.BackColor = System.Drawing.Color.Transparent;
             this._splitContainer2.Location = new System.Drawing.Point(0, 0);
             this._splitContainer2.Margin = new System.Windows.Forms.Padding(0);
             this._splitContainer2.Name = "_splitContainer2";
             // 
             // _splitContainer2.Panel1
             // 
-            this._splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.Control;
+            this._splitContainer2.Panel1.BackColor = System.Drawing.Color.Transparent;
             this._splitContainer2.Panel1.Controls.Add(this._panelLeft);
             // 
             // _splitContainer2.Panel2
             // 
-            this._splitContainer2.Panel2.BackColor = System.Drawing.Color.Transparent;
+            this._splitContainer2.Panel2.BackColor = System.Drawing.Color.White;
             this._splitContainer2.Panel2.Controls.Add(this._splitContainerBoard);
             this._splitContainer2.Panel2.Controls.Add(this._panelWhiteSide);
             this._splitContainer2.Panel2.Controls.Add(this._panelBlackSide);
@@ -288,6 +294,7 @@
             // 
             this._panelLeft.AutoSize = true;
             this._panelLeft.BackColor = System.Drawing.Color.Transparent;
+            this._panelLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this._panelLeft.Controls.Add(this._panelEvalTable);
             this._panelLeft.Controls.Add(this._tableLayoutPanelEngineMatch);
             this._panelLeft.Controls.Add(this._panelMatchInfo);
@@ -1227,7 +1234,7 @@
             this._splitContainerBoard.Panel2.Controls.Add(this._panelResultBox);
             this._splitContainerBoard.Panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._toolTipExit.SetToolTip(this._splitContainerBoard.Panel2, "Close and exit the application");
-            this._splitContainerBoard.Size = new System.Drawing.Size(518, 652);
+            this._splitContainerBoard.Size = new System.Drawing.Size(520, 649);
             this._splitContainerBoard.SplitterDistance = 38;
             this._splitContainerBoard.SplitterWidth = 3;
             this._splitContainerBoard.TabIndex = 2;
@@ -1239,7 +1246,7 @@
             this._panelResultBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelResultBox.Controls.Add(this._panelTermination);
             this._panelResultBox.Controls.Add(this._panelResult);
-            this._panelResultBox.Location = new System.Drawing.Point(161, 300);
+            this._panelResultBox.Location = new System.Drawing.Point(162, 296);
             this._panelResultBox.Margin = new System.Windows.Forms.Padding(0);
             this._panelResultBox.Name = "_panelResultBox";
             this._panelResultBox.Size = new System.Drawing.Size(186, 53);
@@ -1255,18 +1262,6 @@
             this._panelTermination.Name = "_panelTermination";
             this._panelTermination.Size = new System.Drawing.Size(184, 27);
             this._panelTermination.TabIndex = 11;
-            // 
-            // _labelGameTermination
-            // 
-            this._labelGameTermination.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._labelGameTermination.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelGameTermination.ForeColor = System.Drawing.Color.Black;
-            this._labelGameTermination.Location = new System.Drawing.Point(0, 0);
-            this._labelGameTermination.Margin = new System.Windows.Forms.Padding(0);
-            this._labelGameTermination.Name = "_labelGameTermination";
-            this._labelGameTermination.Size = new System.Drawing.Size(184, 27);
-            this._labelGameTermination.TabIndex = 9;
-            this._labelGameTermination.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // _panelResult
             // 
@@ -1298,10 +1293,10 @@
             this._panelWhiteSide.Controls.Add(this._panelWhiteTime);
             this._panelWhiteSide.Controls.Add(this._labelEngine0);
             this._panelWhiteSide.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this._panelWhiteSide.Location = new System.Drawing.Point(0, 741);
+            this._panelWhiteSide.Location = new System.Drawing.Point(0, 743);
             this._panelWhiteSide.Margin = new System.Windows.Forms.Padding(0);
             this._panelWhiteSide.Name = "_panelWhiteSide";
-            this._panelWhiteSide.Size = new System.Drawing.Size(524, 84);
+            this._panelWhiteSide.Size = new System.Drawing.Size(526, 84);
             this._panelWhiteSide.TabIndex = 1;
             // 
             // _panelEngine0Logo
@@ -1329,7 +1324,7 @@
             this._panelWhiteTime.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this._panelWhiteTime.Controls.Add(this._labelWhiteTime);
             this._panelWhiteTime.ForeColor = System.Drawing.Color.Black;
-            this._panelWhiteTime.Location = new System.Drawing.Point(396, 17);
+            this._panelWhiteTime.Location = new System.Drawing.Point(398, 17);
             this._panelWhiteTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelWhiteTime.Name = "_panelWhiteTime";
             this._panelWhiteTime.Size = new System.Drawing.Size(100, 50);
@@ -1359,7 +1354,7 @@
             this._labelEngine0.Location = new System.Drawing.Point(119, 17);
             this._labelEngine0.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0.Name = "_labelEngine0";
-            this._labelEngine0.Size = new System.Drawing.Size(277, 50);
+            this._labelEngine0.Size = new System.Drawing.Size(279, 50);
             this._labelEngine0.TabIndex = 8;
             this._labelEngine0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1373,7 +1368,7 @@
             this._panelBlackSide.Location = new System.Drawing.Point(0, 0);
             this._panelBlackSide.Margin = new System.Windows.Forms.Padding(0);
             this._panelBlackSide.Name = "_panelBlackSide";
-            this._panelBlackSide.Size = new System.Drawing.Size(524, 84);
+            this._panelBlackSide.Size = new System.Drawing.Size(526, 84);
             this._panelBlackSide.TabIndex = 0;
             // 
             // _panelEngine1Logo
@@ -1403,7 +1398,7 @@
             this._panelBlackTime.BackColor = System.Drawing.Color.Transparent;
             this._panelBlackTime.Controls.Add(this._labelBlackTime);
             this._panelBlackTime.ForeColor = System.Drawing.Color.Black;
-            this._panelBlackTime.Location = new System.Drawing.Point(394, 18);
+            this._panelBlackTime.Location = new System.Drawing.Point(396, 18);
             this._panelBlackTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelBlackTime.Name = "_panelBlackTime";
             this._panelBlackTime.Size = new System.Drawing.Size(100, 50);
@@ -1434,7 +1429,7 @@
             this._labelEngine1.Location = new System.Drawing.Point(119, 18);
             this._labelEngine1.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1.Name = "_labelEngine1";
-            this._labelEngine1.Size = new System.Drawing.Size(275, 50);
+            this._labelEngine1.Size = new System.Drawing.Size(277, 50);
             this._labelEngine1.TabIndex = 7;
             this._labelEngine1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1442,7 +1437,6 @@
             // 
             this._panelRight.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this._panelRight.BackColor = System.Drawing.Color.Transparent;
-            this._panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelRight.Controls.Add(this._tableEvaluationChart);
             this._panelRight.Controls.Add(this._dataGridViewMoves);
             this._panelRight.Dock = System.Windows.Forms.DockStyle.Right;
@@ -1923,11 +1917,23 @@
             this._menuItemAboutZentropy.Text = "Zentropy";
             this._menuItemAboutZentropy.Click += new System.EventHandler(this.OnMenuItemAboutZentropyClick);
             // 
+            // _labelGameTermination
+            // 
+            this._labelGameTermination.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._labelGameTermination.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._labelGameTermination.ForeColor = System.Drawing.Color.Black;
+            this._labelGameTermination.Location = new System.Drawing.Point(0, 0);
+            this._labelGameTermination.Margin = new System.Windows.Forms.Padding(0);
+            this._labelGameTermination.Name = "_labelGameTermination";
+            this._labelGameTermination.Size = new System.Drawing.Size(184, 27);
+            this._labelGameTermination.TabIndex = 9;
+            this._labelGameTermination.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 961);
             this.Controls.Add(this._splitContainer1);
             this.Controls.Add(this._menuStripMain);
@@ -2078,7 +2084,6 @@
         private System.Windows.Forms.ToolStripMenuItem _menuItemPgnOptions;
         private System.Windows.Forms.ToolStripMenuItem _menuItemMatch;
         private System.Windows.Forms.ToolStripMenuItem _menuItemMatchOptions;
-        private System.Windows.Forms.Label _labelGameTermination;
         private System.Windows.Forms.Label _labelGameResult;
         private System.Windows.Forms.Panel _panelResult;
         private System.Windows.Forms.Panel _panelTermination;
@@ -2126,6 +2131,7 @@
         private System.Windows.Forms.Label _labelPositionText;
         private System.Windows.Forms.Label _labelPosition;
         private System.Windows.Forms.TableLayoutPanel _tableEvaluationChart;
+        private System.Windows.Forms.Label _labelGameTermination;
     }
 }
 
