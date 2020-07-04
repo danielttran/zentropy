@@ -116,6 +116,7 @@
             this._labelBlackTime = new System.Windows.Forms.Label();
             this._labelEngine1 = new System.Windows.Forms.Label();
             this._panelRight = new System.Windows.Forms.Panel();
+            this._tableEvaluationChart = new System.Windows.Forms.TableLayoutPanel();
             this._panelEvaluationChart = new System.Windows.Forms.Panel();
             this._dataGridViewMoves = new System.Windows.Forms.DataGridView();
             this._whiteMove = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -169,7 +170,6 @@
             this._toolTipPasteFEN = new System.Windows.Forms.ToolTip(this.components);
             this._toolTipSound = new System.Windows.Forms.ToolTip(this.components);
             this._toolTipFlipBoard = new System.Windows.Forms.ToolTip(this.components);
-            this._tableEvaluationChart = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this._splitContainer1)).BeginInit();
             this._splitContainer1.Panel1.SuspendLayout();
             this._splitContainer1.Panel2.SuspendLayout();
@@ -203,10 +203,10 @@
             this._panelEngine1Logo.SuspendLayout();
             this._panelBlackTime.SuspendLayout();
             this._panelRight.SuspendLayout();
+            this._tableEvaluationChart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewMoves)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewEvaluation)).BeginInit();
             this._menuStripMain.SuspendLayout();
-            this._tableEvaluationChart.SuspendLayout();
             this.SuspendLayout();
             // 
             // _timerValidation
@@ -936,9 +936,7 @@
             this._buttonSound.Cursor = System.Windows.Forms.Cursors.Hand;
             this._buttonSound.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this._buttonSound.FlatAppearance.BorderSize = 0;
-            this._buttonSound.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this._buttonSound.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this._buttonSound.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this._buttonSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._buttonSound.ForeColor = System.Drawing.Color.White;
             this._buttonSound.Location = new System.Drawing.Point(61, 53);
@@ -979,9 +977,7 @@
             this._buttonFlipBoard.Cursor = System.Windows.Forms.Cursors.Hand;
             this._buttonFlipBoard.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this._buttonFlipBoard.FlatAppearance.BorderSize = 0;
-            this._buttonFlipBoard.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this._buttonFlipBoard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this._buttonFlipBoard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this._buttonFlipBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._buttonFlipBoard.ForeColor = System.Drawing.Color.White;
             this._buttonFlipBoard.Location = new System.Drawing.Point(120, 53);
@@ -1455,6 +1451,23 @@
             this._panelRight.Size = new System.Drawing.Size(356, 832);
             this._panelRight.TabIndex = 5;
             // 
+            // _tableEvaluationChart
+            // 
+            this._tableEvaluationChart.BackColor = System.Drawing.Color.Transparent;
+            this._tableEvaluationChart.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this._tableEvaluationChart.ColumnCount = 1;
+            this._tableEvaluationChart.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._tableEvaluationChart.Controls.Add(this._panelEvaluationChart, 0, 0);
+            this._tableEvaluationChart.Location = new System.Drawing.Point(17, 432);
+            this._tableEvaluationChart.Margin = new System.Windows.Forms.Padding(0);
+            this._tableEvaluationChart.Name = "_tableEvaluationChart";
+            this._tableEvaluationChart.RowCount = 1;
+            this._tableEvaluationChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.41675F));
+            this._tableEvaluationChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 213F));
+            this._tableEvaluationChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 213F));
+            this._tableEvaluationChart.Size = new System.Drawing.Size(319, 214);
+            this._tableEvaluationChart.TabIndex = 7;
+            // 
             // _panelEvaluationChart
             // 
             this._panelEvaluationChart.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -1906,23 +1919,6 @@
             this._menuItemAboutZentropy.Text = "Zentropy";
             this._menuItemAboutZentropy.Click += new System.EventHandler(this.OnMenuItemAboutZentropyClick);
             // 
-            // _tableEvaluationChart
-            // 
-            this._tableEvaluationChart.BackColor = System.Drawing.Color.Transparent;
-            this._tableEvaluationChart.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this._tableEvaluationChart.ColumnCount = 1;
-            this._tableEvaluationChart.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this._tableEvaluationChart.Controls.Add(this._panelEvaluationChart, 0, 0);
-            this._tableEvaluationChart.Location = new System.Drawing.Point(17, 432);
-            this._tableEvaluationChart.Margin = new System.Windows.Forms.Padding(0);
-            this._tableEvaluationChart.Name = "_tableEvaluationChart";
-            this._tableEvaluationChart.RowCount = 1;
-            this._tableEvaluationChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.41675F));
-            this._tableEvaluationChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-            this._tableEvaluationChart.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-            this._tableEvaluationChart.Size = new System.Drawing.Size(319, 214);
-            this._tableEvaluationChart.TabIndex = 7;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
@@ -1979,11 +1975,11 @@
             this._panelEngine1Logo.ResumeLayout(false);
             this._panelBlackTime.ResumeLayout(false);
             this._panelRight.ResumeLayout(false);
+            this._tableEvaluationChart.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewMoves)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewEvaluation)).EndInit();
             this._menuStripMain.ResumeLayout(false);
             this._menuStripMain.PerformLayout();
-            this._tableEvaluationChart.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
