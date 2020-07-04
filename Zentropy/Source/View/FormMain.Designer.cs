@@ -938,6 +938,7 @@
             this._buttonSound.FlatAppearance.BorderSize = 0;
             this._buttonSound.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonSound.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this._buttonSound.ForeColor = System.Drawing.Color.White;
             this._buttonSound.Location = new System.Drawing.Point(61, 53);
             this._buttonSound.Margin = new System.Windows.Forms.Padding(0);
@@ -958,6 +959,7 @@
             this._buttonPasteFEN.FlatAppearance.BorderSize = 0;
             this._buttonPasteFEN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonPasteFEN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonPasteFEN.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this._buttonPasteFEN.ForeColor = System.Drawing.Color.White;
             this._buttonPasteFEN.Location = new System.Drawing.Point(120, 2);
             this._buttonPasteFEN.Margin = new System.Windows.Forms.Padding(0);
@@ -979,6 +981,7 @@
             this._buttonFlipBoard.FlatAppearance.BorderSize = 0;
             this._buttonFlipBoard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonFlipBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonFlipBoard.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this._buttonFlipBoard.ForeColor = System.Drawing.Color.White;
             this._buttonFlipBoard.Location = new System.Drawing.Point(120, 53);
             this._buttonFlipBoard.Margin = new System.Windows.Forms.Padding(0);
@@ -999,6 +1002,7 @@
             this._buttonCopyFEN.FlatAppearance.BorderSize = 0;
             this._buttonCopyFEN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonCopyFEN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._buttonCopyFEN.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this._buttonCopyFEN.ForeColor = System.Drawing.Color.White;
             this._buttonCopyFEN.Location = new System.Drawing.Point(61, 2);
             this._buttonCopyFEN.Margin = new System.Windows.Forms.Padding(0);
@@ -1020,7 +1024,7 @@
             this._buttonExit.FlatAppearance.BorderSize = 0;
             this._buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonExit.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonExit.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._buttonExit.ForeColor = System.Drawing.Color.White;
             this._buttonExit.Location = new System.Drawing.Point(2, 53);
             this._buttonExit.Margin = new System.Windows.Forms.Padding(0);
@@ -1043,7 +1047,7 @@
             this._buttonAutoPlay.FlatAppearance.BorderSize = 0;
             this._buttonAutoPlay.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonAutoPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonAutoPlay.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonAutoPlay.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._buttonAutoPlay.ForeColor = System.Drawing.Color.White;
             this._buttonAutoPlay.Location = new System.Drawing.Point(179, 2);
             this._buttonAutoPlay.Margin = new System.Windows.Forms.Padding(0);
@@ -1066,7 +1070,7 @@
             this._buttonMoveNow.FlatAppearance.BorderSize = 0;
             this._buttonMoveNow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonMoveNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonMoveNow.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonMoveNow.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._buttonMoveNow.ForeColor = System.Drawing.Color.White;
             this._buttonMoveNow.Location = new System.Drawing.Point(179, 53);
             this._buttonMoveNow.Margin = new System.Windows.Forms.Padding(0);
@@ -1089,7 +1093,7 @@
             this._buttonNewGame.FlatAppearance.BorderSize = 0;
             this._buttonNewGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this._buttonNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._buttonNewGame.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._buttonNewGame.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._buttonNewGame.ForeColor = System.Drawing.Color.White;
             this._buttonNewGame.Location = new System.Drawing.Point(2, 2);
             this._buttonNewGame.Margin = new System.Windows.Forms.Padding(0);
