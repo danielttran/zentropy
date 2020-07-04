@@ -323,7 +323,11 @@ namespace Zentropy.View
             {
                 // not drawing border and coordinates
                 var borderThickness = 1;
+                _boardLocation.X += borderThickness;
+                _boardLocation.Y += borderThickness;
+
                 _boardDimension -= 2 * borderThickness;
+
                 g.DrawRectangle(_borderPenColor, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
             }
 
