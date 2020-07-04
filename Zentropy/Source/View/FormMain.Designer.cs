@@ -1770,6 +1770,7 @@
             this._menuItemDarkMode.Name = "_menuItemDarkMode";
             this._menuItemDarkMode.Size = new System.Drawing.Size(225, 22);
             this._menuItemDarkMode.Text = "Dark Mode";
+            this._menuItemDarkMode.Checked = true; // dark mode by default
             this._menuItemDarkMode.CheckedChanged += new System.EventHandler(this.OnMenuItemDarkModeClick);
             // 
             // _menuItemSound
@@ -1777,6 +1778,7 @@
             this._menuItemSound.CheckOnClick = true;
             this._menuItemSound.Name = "_menuItemSound";
             this._menuItemSound.Size = new System.Drawing.Size(225, 22);
+            this._menuItemSound.Checked = false; // no sound by default
             this._menuItemSound.Text = "Sound";
             // 
             // _menuItemEngine

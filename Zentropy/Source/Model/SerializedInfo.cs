@@ -37,7 +37,7 @@ namespace Zentropy.Model
         public int RoundNumber { get; set; } = 1;
         public int Pause { get; set; } = 4;
         public int Opacity { get; set; } = 200;
-        public bool UseBook { get; set; } = true;
+        public bool UseBook { get; set; } = false;
         public bool Random { get; set; } = false;
         public int LastBookLine { get; set; } = 1;
         public int CurrBookLine { get; set; } = 1;
@@ -80,9 +80,9 @@ namespace Zentropy.Model
             get { return HighlightLastmoveColor.ToArgb(); }
             set { HighlightLastmoveColor = Color.FromArgb(value); }
         }
-        [XmlIgnore] public Color DarkSquareColor { get; set; } = Color.FromArgb(230, 121, 145, 176);
-        [XmlIgnore] public Color LightSquareColor { get; set; } = Color.FromArgb(230, 221, 231, 244);
-        [XmlIgnore] public Color HighlightLastmoveColor { get; set; } = Color.FromArgb(200, 255, 255, 128);
+        [XmlIgnore] public Color DarkSquareColor { get; set; } = Color.FromArgb(118, 150, 86);
+        [XmlIgnore] public Color LightSquareColor { get; set; } = Color.FromArgb(238, 238, 210);
+        [XmlIgnore] public Color HighlightLastmoveColor { get; set; } = Color.FromArgb(255, 255, 128);
 
         private SerializedInfo() { }
     }
