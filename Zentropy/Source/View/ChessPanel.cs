@@ -975,11 +975,11 @@ namespace Zentropy.View
 
                     if (drawInfos[i].Arrow.HasStartCircle)
                     {
-                        arrowPen.StartCap = LineCap.SquareAnchor;
+                        arrowPen.StartCap = LineCap.RoundAnchor;
                     }
                     else
                     {
-                        arrowPen.StartCap = LineCap.Round;
+                        arrowPen.StartCap = LineCap.SquareAnchor;
                     }
 
                     g.DrawLine(arrowPen, drawInfos[i].Positions[0], drawInfos[i].Positions[1]);
@@ -1188,7 +1188,7 @@ namespace Zentropy.View
 
                     if (!wasExisting)
                     {
-                        var indicatorArrow = new MoveArrow(moveString, 1.2, arrowColor, true, true);
+                        var indicatorArrow = new MoveArrow(moveString, 2, arrowColor, true, true);
                         _indicatedMoves.Add(indicatorArrow);
                     }
                 }

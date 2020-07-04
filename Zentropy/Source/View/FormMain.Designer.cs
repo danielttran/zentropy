@@ -949,7 +949,7 @@
             this._panelNavButtons.Controls.Add(this._buttonGoToEnd);
             this._panelNavButtons.Controls.Add(this._buttonGoForward);
             this._panelNavButtons.Controls.Add(this._buttonGoBack);
-            this._panelNavButtons.Location = new System.Drawing.Point(21, 149);
+            this._panelNavButtons.Location = new System.Drawing.Point(23, 149);
             this._panelNavButtons.Margin = new System.Windows.Forms.Padding(0);
             this._panelNavButtons.MaximumSize = new System.Drawing.Size(240, 32);
             this._panelNavButtons.MinimumSize = new System.Drawing.Size(240, 32);
@@ -1296,7 +1296,7 @@
             this._panelEvalTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this._panelEvalTable.BackColor = System.Drawing.Color.Transparent;
             this._panelEvalTable.Controls.Add(this._tableLayoutPanelEvalInfo);
-            this._panelEvalTable.Location = new System.Drawing.Point(2, 196);
+            this._panelEvalTable.Location = new System.Drawing.Point(2, 198);
             this._panelEvalTable.Margin = new System.Windows.Forms.Padding(0);
             this._panelEvalTable.Name = "_panelEvalTable";
             this._panelEvalTable.Size = new System.Drawing.Size(285, 127);

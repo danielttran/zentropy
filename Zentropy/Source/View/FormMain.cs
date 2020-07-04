@@ -646,7 +646,7 @@ namespace Zentropy.View
 
         private void AddMoveArrow(string move)
         {
-            _lastMoveArrow = new MoveArrow(move, 1.2, SerializedInfo.Instance.HighlightLastmoveColor, true, true);
+            _lastMoveArrow = new MoveArrow(move, 2, SerializedInfo.Instance.HighlightLastmoveColor, true, true);
         }
 
         private void AddLastMoveArrow()
@@ -1872,7 +1872,11 @@ namespace Zentropy.View
 
                         if (_engineEvalArrows.Count <= iPv)
                         {
-                            _engineEvalArrows.Add(new MoveArrow(_evaluations[iPv][InfoType.PV]?.Substring(0, 4), 1.2, GetReferenceColor(scoreValue, _mainPvReference), true, true));
+                            _engineEvalArrows.Add(new MoveArrow(_evaluations[iPv][InfoType.PV]?.Substring(0, 4),
+                                                                2,
+                                                                GetReferenceColor(scoreValue, _mainPvReference),
+                                                                true,
+                                                                true));
                         }
                         else
                         {
