@@ -29,9 +29,9 @@ namespace Zentropy.Model
         public bool SaveGames { get; set; } = true;
         public string SiteName { get; set; } = "Earth";
         public string EventName { get; set; } = "Engine Game";
-        public bool SquareOutline { get; set; } = true;
+        public bool SquareOutline { get; set; } = false;
         public bool IsMaximized { get; set; } = false;
-        public bool Sound { get; set; } = true;
+        public bool Sound { get; set; } = false;
         public int MultiPv { get; set; } = 1;
         public int MatchGames { get; set; } = 64;
         public int RoundNumber { get; set; } = 1;

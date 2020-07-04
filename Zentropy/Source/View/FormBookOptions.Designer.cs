@@ -76,7 +76,6 @@
             this._checkBoxUseBook.Text = "Use Book";
             this._toolTipUseBook.SetToolTip(this._checkBoxUseBook, "Start each game with a position from FEN opening book \"book.fen\".");
             this._checkBoxUseBook.UseVisualStyleBackColor = true;
-            this._checkBoxUseBook.Checked = false; // no book by default
             // 
             // _checkBoxRandom
             // 
