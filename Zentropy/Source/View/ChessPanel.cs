@@ -43,6 +43,7 @@ namespace Zentropy.View
         private string _pieceFontFamily = string.Empty;
         private Color _darkSquare = Color.Brown;
         private Color _borderColor = Color.White;
+        private Pen _borderPenColor = Pens.Gray;
         private readonly Brush _legalMoveCircleBrush = new SolidBrush(Color.FromArgb(80, 6, 6, 6));
         private Point _boardLocation;
         private Point _selectedIndex = new Point(-1, -1);
@@ -60,6 +61,8 @@ namespace Zentropy.View
         private readonly List<int> _indicatedNegativeSquares = new List<int>();
         private readonly List<int> _indicatedNeutralSquares = new List<int>();
         private readonly List<MoveArrow> _indicatedMoves = new List<MoveArrow>();
+
+        private readonly double borderThicknessRatio = 0.032;
 
         #endregion
 
@@ -194,10 +197,10 @@ namespace Zentropy.View
             if (BoardBorder && Coordinates)
             {
                 var borderBrush = new SolidBrush(_borderColor);
-                var borderThickness = Round(_boardDimension * 0.032);
+                var borderThickness = Round(_boardDimension * borderThicknessRatio);
 
                 g.FillRectangle(borderBrush, _boardLocation.X, _boardLocation.Y, _boardDimension + 1, _boardDimension + 1);
-                g.DrawRectangle(Pens.Black, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
+                g.DrawRectangle(_borderPenColor, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
 
                 g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
 
@@ -223,13 +226,17 @@ namespace Zentropy.View
                             file = ((char)(i + 65)).ToString();
                         }
 
-                        g.DrawString(rank, coordinateFont, Brushes.Black,
-                            _boardLocation.X + Round(borderThickness * 0.15),
-                            _boardLocation.Y + Round(borderThickness + _fieldSize / 2.5 + _fieldSize * i));
+                        g.DrawString(rank,
+                                     coordinateFont,
+                                     Brushes.Black,
+                                     _boardLocation.X + Round(borderThickness * 0.15),
+                                     _boardLocation.Y + Round(borderThickness + _fieldSize / 2.5 + _fieldSize * i));
 
-                        g.DrawString(file, coordinateFont, Brushes.Black,
-                            _boardLocation.X + Round(borderThickness + _fieldSize / 2.4 + _fieldSize * i),
-                            _boardLocation.Y + _boardDimension - Round(borderThickness * 0.85));
+                        g.DrawString(file,
+                                     coordinateFont,
+                                     Brushes.Black,
+                                     _boardLocation.X + Round(borderThickness + _fieldSize / 2.4 + _fieldSize * i),
+                                     _boardLocation.Y + _boardDimension - Round(borderThickness * 0.85));
                     }
                 }
 
@@ -238,7 +245,7 @@ namespace Zentropy.View
 
                 _boardDimension -= 2 * borderThickness;
 
-                g.DrawRectangle(Pens.Black, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
+                g.DrawRectangle(_borderPenColor, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
             }
             else
             // Draw Border
@@ -248,7 +255,10 @@ namespace Zentropy.View
                 var borderBrush = new SolidBrush(_borderColor);
 
                 g.FillRectangle(borderBrush, _boardLocation.X, _boardLocation.Y, _boardDimension + 1, _boardDimension + 1);
-                g.DrawRectangle(Pens.Black, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
+
+                // turn this off making it cleaner
+                // draw rectangle around board
+                //g.DrawRectangle(_borderPenColor, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
 
                 g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
 
@@ -257,13 +267,15 @@ namespace Zentropy.View
 
                 _boardDimension -= 2 * borderThickness;
 
-                g.DrawRectangle(Pens.Black, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
+                // turn this off making it cleaner
+                // draw rectangle around board border
+                //g.DrawRectangle(_borderPenColor, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
             }
             else
             // Draw Coordinates
             if (Coordinates && !BoardBorder)
             {
-                var borderThickness = Round(_boardDimension * 0.032);
+                var borderThickness = Round(_boardDimension * borderThicknessRatio);
                 var coordinateFontSize = (int)(borderThickness * 0.5);
 
                 if (coordinateFontSize >= 1)
@@ -286,13 +298,17 @@ namespace Zentropy.View
                             file = ((char)(i + 65)).ToString();
                         }
 
-                        g.DrawString(rank, coordinateFont, Brushes.Black,
-                            _boardLocation.X + Round(borderThickness * 0.15),
-                            _boardLocation.Y + Round(borderThickness + _fieldSize / 2.5 + _fieldSize * i));
+                        g.DrawString(rank,
+                                     coordinateFont,
+                                     Brushes.Black,
+                                     _boardLocation.X + Round(borderThickness * 0.15),
+                                     _boardLocation.Y + Round(borderThickness + _fieldSize / 2.5 + _fieldSize * i));
 
-                        g.DrawString(file, coordinateFont, Brushes.Black,
-                            _boardLocation.X + Round(borderThickness + _fieldSize / 2.4 + _fieldSize * i),
-                            _boardLocation.Y + _boardDimension - Round(borderThickness * 0.85));
+                        g.DrawString(file,
+                                     coordinateFont,
+                                     Brushes.Black,
+                                     _boardLocation.X + Round(borderThickness + _fieldSize / 2.4 + _fieldSize * i),
+                                     _boardLocation.Y + _boardDimension - Round(borderThickness * 0.85));
                     }
                 }
 
@@ -301,8 +317,14 @@ namespace Zentropy.View
 
                 _boardDimension -= 2 * borderThickness;
 
-                g.DrawRectangle(Pens.Black, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2,
-                    _boardDimension + 2);
+                g.DrawRectangle(_borderPenColor, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
+            }
+            else
+            {
+                // not drawing border and coordinates
+                var borderThickness = 1;
+                _boardDimension -= 2 * borderThickness;
+                g.DrawRectangle(_borderPenColor, _boardLocation.X - 1, _boardLocation.Y - 1, _boardDimension + 2, _boardDimension + 2);
             }
 
             _fieldSize = _boardDimension / (double)Board.Length;
@@ -442,7 +464,11 @@ namespace Zentropy.View
                             }
                         }
 
-                        g.DrawImage(drawnImage, xLinePositions[x], yLinePositions[y], xLinePositions[x + 1] - xLinePositions[x] + 1, xLinePositions[y + 1] - xLinePositions[y] + 1);
+                        g.DrawImage(drawnImage,
+                                    xLinePositions[x],
+                                    yLinePositions[y],
+                                    xLinePositions[x + 1] - xLinePositions[x] + 1,
+                                    xLinePositions[y + 1] - xLinePositions[y] + 1);
                     }
                 }
             }
@@ -467,11 +493,17 @@ namespace Zentropy.View
 
                 if (drawnImage == null)
                 {
-                    drawnImage = ResizeImage(DarkSquareImage, _boardDimension, _boardDimension);
+                    drawnImage = ResizeImage(DarkSquareImage,
+                                             _boardDimension,
+                                             _boardDimension);
                     _resizedDarkSquareImages.Add(drawnImage);
                 }
 
-                g.DrawImage(drawnImage, _boardLocation.X, _boardLocation.Y, _boardDimension + 1, _boardDimension + 1);
+                g.DrawImage(drawnImage,
+                            _boardLocation.X,
+                            _boardLocation.Y,
+                            _boardDimension + 1,
+                            _boardDimension + 1);
             }
             else
             {
@@ -490,11 +522,19 @@ namespace Zentropy.View
 
                         if (index % 2 == 0)
                         {
-                            g.FillRectangle(new SolidBrush(evenSquare), xLinePositions[x], yLinePositions[y], xLinePositions[x + 1] - xLinePositions[x] + 1, xLinePositions[y + 1] - xLinePositions[y] + 1);
+                            g.FillRectangle(new SolidBrush(evenSquare),
+                                            xLinePositions[x],
+                                            yLinePositions[y],
+                                            xLinePositions[x + 1] - xLinePositions[x] + 1,
+                                            xLinePositions[y + 1] - xLinePositions[y] + 1);
                         }
                         else
                         {
-                            g.FillRectangle(new SolidBrush(oddSquare), xLinePositions[x], yLinePositions[y], xLinePositions[x + 1] - xLinePositions[x] + 1, xLinePositions[y + 1] - xLinePositions[y] + 1);
+                            g.FillRectangle(new SolidBrush(oddSquare),
+                                            xLinePositions[x],
+                                            yLinePositions[y],
+                                            xLinePositions[x + 1] - xLinePositions[x] + 1,
+                                            xLinePositions[y + 1] - xLinePositions[y] + 1);
                         }
                     }
                 }
@@ -538,17 +578,21 @@ namespace Zentropy.View
 
                                 var borderPen = new Pen(HighlightLastmoveColor, borderThickness * 2);
 
-                                g.DrawRectangle(borderPen, xLinePositions[x] + offSet, yLinePositions[y] + offSet,
-                                    xLinePositions[x + 1] - xLinePositions[x] + widthCorrection - borderThickness,
-                                    xLinePositions[y + 1] - xLinePositions[y] + heightCorrection - borderThickness);
+                                g.DrawRectangle(borderPen,
+                                                xLinePositions[x] + offSet,
+                                                yLinePositions[y] + offSet,
+                                                xLinePositions[x + 1] - xLinePositions[x] + widthCorrection - borderThickness,
+                                                xLinePositions[y + 1] - xLinePositions[y] + heightCorrection - borderThickness);
                             }
                             else
                             {
                                 var highLight = new SolidBrush(HighlightLastmoveColor);
 
-                                g.FillRectangle(highLight, xLinePositions[x], yLinePositions[y],
-                                    xLinePositions[x + 1] - xLinePositions[x] + widthCorrection,
-                                    xLinePositions[y + 1] - xLinePositions[y] + heightCorrection);
+                                g.FillRectangle(highLight,
+                                                xLinePositions[x],
+                                                yLinePositions[y],
+                                                xLinePositions[x + 1] - xLinePositions[x] + widthCorrection,
+                                                xLinePositions[y + 1] - xLinePositions[y] + heightCorrection);
                             }
                         }
                     }
@@ -628,10 +672,17 @@ namespace Zentropy.View
             {
                 for (var i = 0; i < Board.Length + 1; i++)
                 {
-                    g.DrawLine(Pens.Black, _boardLocation.X, yLinePositions[i], _boardDimension + _boardLocation.X,
-                        yLinePositions[i]);
-                    g.DrawLine(Pens.Black, xLinePositions[i], _boardLocation.Y, xLinePositions[i],
-                        _boardDimension + _boardLocation.Y);
+                    g.DrawLine(_borderPenColor,
+                               _boardLocation.X,
+                               yLinePositions[i],
+                               _boardDimension + _boardLocation.X,
+                               yLinePositions[i]);
+
+                    g.DrawLine(_borderPenColor,
+                               xLinePositions[i],
+                               _boardLocation.Y,
+                               xLinePositions[i],
+                               _boardDimension + _boardLocation.Y);
                 }
             }
 
@@ -731,20 +782,19 @@ namespace Zentropy.View
 
                         if (!IsFlipped)
                         {
-                            g.FillEllipse(_legalMoveCircleBrush,
-                                Round((int)current.NewPosition.File * _fieldSize + _fieldSize * 0.4) +
-                                _boardLocation.X,
-                                Round(Invert(Game.BoardHeight, current.NewPosition.Rank) * _fieldSize +
-                                      _fieldSize * 0.4) + _boardLocation.Y, Round(_fieldSize * 0.2),
-                                Round(_fieldSize * 0.2));
+                            g.FillEllipse(  _legalMoveCircleBrush, 
+                                            Round((int)current.NewPosition.File * _fieldSize + _fieldSize * 0.4) + _boardLocation.X,
+                                            Round(Invert(Game.BoardHeight, current.NewPosition.Rank) * _fieldSize +
+                                            _fieldSize * 0.4) + _boardLocation.Y, Round(_fieldSize * 0.2),
+                                            Round(_fieldSize * 0.2));
                         }
                         else
                         {
-                            g.FillEllipse(_legalMoveCircleBrush,
-                                Round(Invert(Game.BoardHeight - 1, (int)current.NewPosition.File) * _fieldSize +
-                                      _fieldSize * 0.4) + _boardLocation.X,
-                                Round((current.NewPosition.Rank - 1) * _fieldSize + _fieldSize * 0.4) +
-                                _boardLocation.Y, Round(_fieldSize * 0.2), Round(_fieldSize * 0.2));
+                            g.FillEllipse(  _legalMoveCircleBrush,
+                                            Round(Invert(Game.BoardHeight - 1, (int)current.NewPosition.File) * _fieldSize +
+                                            _fieldSize * 0.4) + _boardLocation.X,
+                                            Round((current.NewPosition.Rank - 1) * _fieldSize + _fieldSize * 0.4) +
+                                            _boardLocation.Y, Round(_fieldSize * 0.2), Round(_fieldSize * 0.2));
                         }
                     }
                 }
