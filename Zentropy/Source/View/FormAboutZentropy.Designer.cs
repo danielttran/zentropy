@@ -30,6 +30,7 @@
             this._labelChessDotNet = new System.Windows.Forms.Label();
             this._labelBy = new System.Windows.Forms.Label();
             this._groupBoxBasedOn = new System.Windows.Forms.GroupBox();
+            this._labelSourceUrl = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this._pictureBoxLogo)).BeginInit();
             this._groupBoxBasedOn.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             // 
             this._labelVersion.AutoSize = true;
             this._labelVersion.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelVersion.Location = new System.Drawing.Point(241, 87);
+            this._labelVersion.Location = new System.Drawing.Point(168, 50);
             this._labelVersion.Name = "_labelVersion";
             this._labelVersion.Size = new System.Drawing.Size(151, 17);
             this._labelVersion.TabIndex = 7;
@@ -79,7 +80,7 @@
             // 
             this._labelZentropy.AutoSize = true;
             this._labelZentropy.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelZentropy.Location = new System.Drawing.Point(200, 60);
+            this._labelZentropy.Location = new System.Drawing.Point(168, 20);
             this._labelZentropy.Name = "_labelZentropy";
             this._labelZentropy.Size = new System.Drawing.Size(231, 18);
             this._labelZentropy.TabIndex = 9;
@@ -129,9 +130,20 @@
             this._groupBoxBasedOn.TabStop = false;
             this._groupBoxBasedOn.Text = "Based on";
             // 
+            // _labelSourceUrl
+            // 
+            this._labelSourceUrl.AutoSize = true;
+            this._labelSourceUrl.Location = new System.Drawing.Point(168, 79);
+            this._labelSourceUrl.Name = "_labelSourceUrl";
+            this._labelSourceUrl.Size = new System.Drawing.Size(293, 17);
+            this._labelSourceUrl.TabIndex = 15;
+            this._labelSourceUrl.TabStop = true;
+            this._labelSourceUrl.Text = "https://github.com/danielttran/zentropy";
+            // 
             // FormAboutZentropy
             // 
             this.ClientSize = new System.Drawing.Size(480, 345);
+            this.Controls.Add(this._labelSourceUrl);
             this.Controls.Add(this._groupBoxBasedOn);
             this.Controls.Add(this._labelBy);
             this.Controls.Add(this._labelZentropy);
@@ -162,5 +174,6 @@
         private System.Windows.Forms.Label _labelChessDotNet;
         private System.Windows.Forms.Label _labelBy;
         private System.Windows.Forms.GroupBox _groupBoxBasedOn;
+        private System.Windows.Forms.LinkLabel _labelSourceUrl;
     }
 }
