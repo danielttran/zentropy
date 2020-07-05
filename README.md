@@ -34,9 +34,11 @@ based on and developed from:
 * optional legal move display
 * real-time engine LOS (likelihood of superiority) calculation
 
+*Screenshots*
+
 ![alt tag](https://github.com/danielttran/zentropy/blob/master/Zentropy1.png)
 
 ![alt tag](https://github.com/danielttran/zentropy/blob/master/Zentropy2.png)
 
-## ICons:
+## Button Icons:
 * "Icon made by Pixel perfect from www.flaticon.com"
