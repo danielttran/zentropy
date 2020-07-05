@@ -34,7 +34,9 @@ based on and developed from:
 * optional legal move display
 * real-time engine LOS (likelihood of superiority) calculation
 
-![alt tag](https://raw.githubusercontent.com/FireFather/Zentropy/master/capture.png)
+![alt tag](https://github.com/danielttran/zentropy/blob/master/Zentropy1.png)
+
+![alt tag](https://github.com/danielttran/zentropy/blob/master/Zentropy2.png)
 
 ## ICons:
 * "Icon made by Pixel perfect from www.flaticon.com"
