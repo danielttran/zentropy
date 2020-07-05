@@ -2256,12 +2256,14 @@ namespace Zentropy.View
 
         private void SetDarkMode(Control control, bool darkMode)
         {
+            SetDarkmodeForChessboard(darkMode);
+
             List<Control> controls = GetAllChildControls(control).ToList();
             controls.Add(this);
 
             for (int i = 0; i < controls.Count; i++)
             {
-                if(controls[i] is Button)
+                if (controls[i] is Button)
                 {
                     continue;
                 }
@@ -2281,7 +2283,7 @@ namespace Zentropy.View
                 {
                     if (darkMode)
                     {
-                        grid.BorderStyle = BorderStyle.Fixed3D;					
+                        grid.BorderStyle = BorderStyle.Fixed3D;
                         grid.BackgroundColor = SerializedInfo.Instance.DarkModeBackColor;
                         grid.DefaultCellStyle.BackColor = SerializedInfo.Instance.DarkModeBackColor;
                         grid.DefaultCellStyle.ForeColor = SerializedInfo.Instance.DarkModeForeColor;
@@ -2331,7 +2333,16 @@ namespace Zentropy.View
                 }
             }
         }
-        
+
+        /// <summary>
+        /// Update darkmode value for chessboard
+        /// </summary>
+        /// <param name="darkMode"></param>
+        private void SetDarkmodeForChessboard(bool darkMode)
+        {
+            _chessPanel.UseDarkMode = darkMode;
+        }
+
         delegate void ClearDataGridRowsCallback();
 
         private void ClearDataGridRows()

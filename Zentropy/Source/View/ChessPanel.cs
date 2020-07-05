@@ -69,6 +69,7 @@ namespace Zentropy.View
         #region Properties
 
         public bool UseSquareImages { get; set; } = false;
+        public bool UseDarkMode { get; set; } = false;
         public bool Gradient { get; set; } = true;
         public bool NoHighlight { get; set; } = false;
         public bool BorderHighlight { get; set; } = false;
@@ -146,6 +147,18 @@ namespace Zentropy.View
                 }
 
                 _borderColor = Color.FromArgb(borderColor[0], borderColor[1], borderColor[2]);
+            }
+        }
+
+        public Brush CoordinateBrushColor
+        {
+            get
+            {
+                if(UseDarkMode == true)
+                {
+                    return Brushes.White;
+                }
+                return Brushes.Black;
             }
         }
 
@@ -228,13 +241,13 @@ namespace Zentropy.View
 
                         g.DrawString(rank,
                                      coordinateFont,
-                                     Brushes.Black,
+                                     CoordinateBrushColor,
                                      _boardLocation.X + Round(borderThickness * 0.15),
                                      _boardLocation.Y + Round(borderThickness + _fieldSize / 2.5 + _fieldSize * i));
 
                         g.DrawString(file,
                                      coordinateFont,
-                                     Brushes.Black,
+                                     CoordinateBrushColor,
                                      _boardLocation.X + Round(borderThickness + _fieldSize / 2.4 + _fieldSize * i),
                                      _boardLocation.Y + _boardDimension - Round(borderThickness * 0.85));
                     }
@@ -300,13 +313,13 @@ namespace Zentropy.View
 
                         g.DrawString(rank,
                                      coordinateFont,
-                                     Brushes.Black,
+                                     CoordinateBrushColor,
                                      _boardLocation.X + Round(borderThickness * 0.15),
                                      _boardLocation.Y + Round(borderThickness + _fieldSize / 2.5 + _fieldSize * i));
 
                         g.DrawString(file,
                                      coordinateFont,
-                                     Brushes.Black,
+                                     CoordinateBrushColor,
                                      _boardLocation.X + Round(borderThickness + _fieldSize / 2.4 + _fieldSize * i),
                                      _boardLocation.Y + _boardDimension - Round(borderThickness * 0.85));
                     }
@@ -1559,7 +1572,7 @@ namespace Zentropy.View
             var g = Graphics.FromImage(charImage);
             g.SmoothingMode = SmoothingMode.AntiAlias;
             g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
-            g.DrawString(character.ToString(), font, Brushes.Black, 0, 0);
+            g.DrawString(character.ToString(), font, CoordinateBrushColor, 0, 0);
             return charImage;
         }
 

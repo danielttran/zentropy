@@ -318,12 +318,13 @@
             this._panelEvalTable.Location = new System.Drawing.Point(2, 198);
             this._panelEvalTable.Margin = new System.Windows.Forms.Padding(0);
             this._panelEvalTable.Name = "_panelEvalTable";
-            this._panelEvalTable.Size = new System.Drawing.Size(285, 127);
+            this._panelEvalTable.Size = new System.Drawing.Size(271, 127);
             this._panelEvalTable.TabIndex = 9;
             // 
             // _tableLayoutPanelEvalInfo
             // 
             this._tableLayoutPanelEvalInfo.BackColor = System.Drawing.Color.Transparent;
+            this._tableLayoutPanelEvalInfo.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this._tableLayoutPanelEvalInfo.ColumnCount = 2;
             this._tableLayoutPanelEvalInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this._tableLayoutPanelEvalInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -348,18 +349,18 @@
             this._tableLayoutPanelEvalInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this._tableLayoutPanelEvalInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this._tableLayoutPanelEvalInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this._tableLayoutPanelEvalInfo.Size = new System.Drawing.Size(285, 127);
+            this._tableLayoutPanelEvalInfo.Size = new System.Drawing.Size(271, 127);
             this._tableLayoutPanelEvalInfo.TabIndex = 8;
             // 
             // _labelScoreText
             // 
             this._labelScoreText.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelScoreText.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelScoreText.Location = new System.Drawing.Point(0, 0);
+            this._labelScoreText.Location = new System.Drawing.Point(1, 1);
             this._labelScoreText.Margin = new System.Windows.Forms.Padding(0);
             this._labelScoreText.Name = "_labelScoreText";
             this._labelScoreText.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelScoreText.Size = new System.Drawing.Size(142, 25);
+            this._labelScoreText.Size = new System.Drawing.Size(134, 24);
             this._labelScoreText.TabIndex = 15;
             this._labelScoreText.Text = "Score";
             this._labelScoreText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -370,10 +371,10 @@
             this._labelScore.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelScore.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._labelScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(0)))));
-            this._labelScore.Location = new System.Drawing.Point(142, 0);
+            this._labelScore.Location = new System.Drawing.Point(136, 1);
             this._labelScore.Margin = new System.Windows.Forms.Padding(0);
             this._labelScore.Name = "_labelScore";
-            this._labelScore.Size = new System.Drawing.Size(143, 25);
+            this._labelScore.Size = new System.Drawing.Size(134, 24);
             this._labelScore.TabIndex = 14;
             this._labelScore.Text = "+0.00";
             this._labelScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -382,11 +383,11 @@
             // 
             this._labelDepthText.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelDepthText.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelDepthText.Location = new System.Drawing.Point(0, 25);
+            this._labelDepthText.Location = new System.Drawing.Point(1, 26);
             this._labelDepthText.Margin = new System.Windows.Forms.Padding(0);
             this._labelDepthText.Name = "_labelDepthText";
             this._labelDepthText.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelDepthText.Size = new System.Drawing.Size(142, 25);
+            this._labelDepthText.Size = new System.Drawing.Size(134, 24);
             this._labelDepthText.TabIndex = 16;
             this._labelDepthText.Text = "Depth";
             this._labelDepthText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -395,11 +396,11 @@
             // 
             this._labelNodesText.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelNodesText.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelNodesText.Location = new System.Drawing.Point(0, 50);
+            this._labelNodesText.Location = new System.Drawing.Point(1, 51);
             this._labelNodesText.Margin = new System.Windows.Forms.Padding(0);
             this._labelNodesText.Name = "_labelNodesText";
             this._labelNodesText.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelNodesText.Size = new System.Drawing.Size(142, 25);
+            this._labelNodesText.Size = new System.Drawing.Size(134, 24);
             this._labelNodesText.TabIndex = 17;
             this._labelNodesText.Text = "Nodes";
             this._labelNodesText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -408,11 +409,11 @@
             // 
             this._labelNPSText.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelNPSText.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelNPSText.Location = new System.Drawing.Point(0, 75);
+            this._labelNPSText.Location = new System.Drawing.Point(1, 76);
             this._labelNPSText.Margin = new System.Windows.Forms.Padding(0);
             this._labelNPSText.Name = "_labelNPSText";
             this._labelNPSText.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelNPSText.Size = new System.Drawing.Size(142, 25);
+            this._labelNPSText.Size = new System.Drawing.Size(134, 24);
             this._labelNPSText.TabIndex = 18;
             this._labelNPSText.Text = "NPS";
             this._labelNPSText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -421,11 +422,11 @@
             // 
             this._labelTimeText.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelTimeText.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelTimeText.Location = new System.Drawing.Point(0, 100);
+            this._labelTimeText.Location = new System.Drawing.Point(1, 101);
             this._labelTimeText.Margin = new System.Windows.Forms.Padding(0);
             this._labelTimeText.Name = "_labelTimeText";
             this._labelTimeText.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelTimeText.Size = new System.Drawing.Size(142, 27);
+            this._labelTimeText.Size = new System.Drawing.Size(134, 25);
             this._labelTimeText.TabIndex = 19;
             this._labelTimeText.Text = "Time";
             this._labelTimeText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -434,10 +435,10 @@
             // 
             this._labelDepth.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelDepth.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelDepth.Location = new System.Drawing.Point(142, 25);
+            this._labelDepth.Location = new System.Drawing.Point(136, 26);
             this._labelDepth.Margin = new System.Windows.Forms.Padding(0);
             this._labelDepth.Name = "_labelDepth";
-            this._labelDepth.Size = new System.Drawing.Size(143, 25);
+            this._labelDepth.Size = new System.Drawing.Size(134, 24);
             this._labelDepth.TabIndex = 20;
             this._labelDepth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -445,10 +446,10 @@
             // 
             this._labelNodes.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelNodes.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelNodes.Location = new System.Drawing.Point(142, 50);
+            this._labelNodes.Location = new System.Drawing.Point(136, 51);
             this._labelNodes.Margin = new System.Windows.Forms.Padding(0);
             this._labelNodes.Name = "_labelNodes";
-            this._labelNodes.Size = new System.Drawing.Size(143, 25);
+            this._labelNodes.Size = new System.Drawing.Size(134, 24);
             this._labelNodes.TabIndex = 21;
             this._labelNodes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -456,10 +457,10 @@
             // 
             this._labelNPS.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelNPS.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelNPS.Location = new System.Drawing.Point(142, 75);
+            this._labelNPS.Location = new System.Drawing.Point(136, 76);
             this._labelNPS.Margin = new System.Windows.Forms.Padding(0);
             this._labelNPS.Name = "_labelNPS";
-            this._labelNPS.Size = new System.Drawing.Size(143, 25);
+            this._labelNPS.Size = new System.Drawing.Size(134, 24);
             this._labelNPS.TabIndex = 22;
             this._labelNPS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -467,10 +468,10 @@
             // 
             this._labelTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelTime.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._labelTime.Location = new System.Drawing.Point(142, 100);
+            this._labelTime.Location = new System.Drawing.Point(136, 101);
             this._labelTime.Margin = new System.Windows.Forms.Padding(0);
             this._labelTime.Name = "_labelTime";
-            this._labelTime.Size = new System.Drawing.Size(143, 27);
+            this._labelTime.Size = new System.Drawing.Size(134, 25);
             this._labelTime.TabIndex = 23;
             this._labelTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -479,6 +480,7 @@
             this._tableLayoutPanelEngineMatch.AutoSize = true;
             this._tableLayoutPanelEngineMatch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this._tableLayoutPanelEngineMatch.BackColor = System.Drawing.Color.Transparent;
+            this._tableLayoutPanelEngineMatch.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this._tableLayoutPanelEngineMatch.ColumnCount = 3;
             this._tableLayoutPanelEngineMatch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this._tableLayoutPanelEngineMatch.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -507,6 +509,8 @@
             this._tableLayoutPanelEngineMatch.Font = new System.Drawing.Font("Verdana", 10F);
             this._tableLayoutPanelEngineMatch.Location = new System.Drawing.Point(2, 486);
             this._tableLayoutPanelEngineMatch.Margin = new System.Windows.Forms.Padding(0);
+            this._tableLayoutPanelEngineMatch.MaximumSize = new System.Drawing.Size(271, 175);
+            this._tableLayoutPanelEngineMatch.MinimumSize = new System.Drawing.Size(271, 200);
             this._tableLayoutPanelEngineMatch.Name = "_tableLayoutPanelEngineMatch";
             this._tableLayoutPanelEngineMatch.RowCount = 7;
             this._tableLayoutPanelEngineMatch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -516,7 +520,7 @@
             this._tableLayoutPanelEngineMatch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this._tableLayoutPanelEngineMatch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this._tableLayoutPanelEngineMatch.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this._tableLayoutPanelEngineMatch.Size = new System.Drawing.Size(285, 175);
+            this._tableLayoutPanelEngineMatch.Size = new System.Drawing.Size(271, 200);
             this._tableLayoutPanelEngineMatch.TabIndex = 14;
             // 
             // _labelEngine0LOS
@@ -524,11 +528,11 @@
             this._labelEngine0LOS.BackColor = System.Drawing.Color.White;
             this._labelEngine0LOS.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine0LOS.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine0LOS.Location = new System.Drawing.Point(95, 150);
+            this._labelEngine0LOS.Location = new System.Drawing.Point(91, 157);
             this._labelEngine0LOS.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0LOS.Name = "_labelEngine0LOS";
             this._labelEngine0LOS.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine0LOS.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine0LOS.Size = new System.Drawing.Size(89, 42);
             this._labelEngine0LOS.TabIndex = 7;
             this._labelEngine0LOS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -537,11 +541,11 @@
             this._labelEngine0WinPercent.BackColor = System.Drawing.Color.White;
             this._labelEngine0WinPercent.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine0WinPercent.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine0WinPercent.Location = new System.Drawing.Point(95, 125);
+            this._labelEngine0WinPercent.Location = new System.Drawing.Point(91, 131);
             this._labelEngine0WinPercent.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0WinPercent.Name = "_labelEngine0WinPercent";
             this._labelEngine0WinPercent.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine0WinPercent.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine0WinPercent.Size = new System.Drawing.Size(89, 25);
             this._labelEngine0WinPercent.TabIndex = 5;
             this._labelEngine0WinPercent.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -550,11 +554,11 @@
             this._labelEngine0Points.BackColor = System.Drawing.Color.White;
             this._labelEngine0Points.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine0Points.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine0Points.Location = new System.Drawing.Point(95, 100);
+            this._labelEngine0Points.Location = new System.Drawing.Point(91, 105);
             this._labelEngine0Points.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0Points.Name = "_labelEngine0Points";
             this._labelEngine0Points.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine0Points.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine0Points.Size = new System.Drawing.Size(89, 25);
             this._labelEngine0Points.TabIndex = 3;
             this._labelEngine0Points.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -563,11 +567,11 @@
             this._labelEngine0Wins.BackColor = System.Drawing.Color.White;
             this._labelEngine0Wins.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine0Wins.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine0Wins.Location = new System.Drawing.Point(95, 25);
+            this._labelEngine0Wins.Location = new System.Drawing.Point(91, 27);
             this._labelEngine0Wins.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0Wins.Name = "_labelEngine0Wins";
             this._labelEngine0Wins.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine0Wins.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine0Wins.Size = new System.Drawing.Size(89, 25);
             this._labelEngine0Wins.TabIndex = 2;
             this._labelEngine0Wins.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -576,11 +580,11 @@
             this._labelEngine0Draws.BackColor = System.Drawing.Color.White;
             this._labelEngine0Draws.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine0Draws.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine0Draws.Location = new System.Drawing.Point(95, 50);
+            this._labelEngine0Draws.Location = new System.Drawing.Point(91, 53);
             this._labelEngine0Draws.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0Draws.Name = "_labelEngine0Draws";
             this._labelEngine0Draws.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine0Draws.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine0Draws.Size = new System.Drawing.Size(89, 25);
             this._labelEngine0Draws.TabIndex = 4;
             this._labelEngine0Draws.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -589,11 +593,11 @@
             this._labelEngine0Losses.BackColor = System.Drawing.Color.White;
             this._labelEngine0Losses.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine0Losses.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine0Losses.Location = new System.Drawing.Point(95, 75);
+            this._labelEngine0Losses.Location = new System.Drawing.Point(91, 79);
             this._labelEngine0Losses.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0Losses.Name = "_labelEngine0Losses";
             this._labelEngine0Losses.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine0Losses.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine0Losses.Size = new System.Drawing.Size(89, 25);
             this._labelEngine0Losses.TabIndex = 6;
             this._labelEngine0Losses.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -601,11 +605,11 @@
             // 
             this._labelEngine0Name.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine0Name.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine0Name.Location = new System.Drawing.Point(95, 0);
+            this._labelEngine0Name.Location = new System.Drawing.Point(91, 1);
             this._labelEngine0Name.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0Name.Name = "_labelEngine0Name";
             this._labelEngine0Name.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine0Name.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine0Name.Size = new System.Drawing.Size(89, 25);
             this._labelEngine0Name.TabIndex = 0;
             this._labelEngine0Name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -613,11 +617,11 @@
             // 
             this._labelEngine1Name.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine1Name.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine1Name.Location = new System.Drawing.Point(190, 0);
+            this._labelEngine1Name.Location = new System.Drawing.Point(181, 1);
             this._labelEngine1Name.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1Name.Name = "_labelEngine1Name";
             this._labelEngine1Name.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine1Name.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine1Name.Size = new System.Drawing.Size(89, 25);
             this._labelEngine1Name.TabIndex = 0;
             this._labelEngine1Name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -626,11 +630,11 @@
             this._labelEngine1WinPercent.BackColor = System.Drawing.Color.White;
             this._labelEngine1WinPercent.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine1WinPercent.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine1WinPercent.Location = new System.Drawing.Point(190, 125);
+            this._labelEngine1WinPercent.Location = new System.Drawing.Point(181, 131);
             this._labelEngine1WinPercent.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1WinPercent.Name = "_labelEngine1WinPercent";
             this._labelEngine1WinPercent.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine1WinPercent.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine1WinPercent.Size = new System.Drawing.Size(89, 25);
             this._labelEngine1WinPercent.TabIndex = 5;
             this._labelEngine1WinPercent.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -639,11 +643,11 @@
             this._labelEngine1Points.BackColor = System.Drawing.Color.White;
             this._labelEngine1Points.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine1Points.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine1Points.Location = new System.Drawing.Point(190, 100);
+            this._labelEngine1Points.Location = new System.Drawing.Point(181, 105);
             this._labelEngine1Points.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1Points.Name = "_labelEngine1Points";
             this._labelEngine1Points.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine1Points.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine1Points.Size = new System.Drawing.Size(89, 25);
             this._labelEngine1Points.TabIndex = 3;
             this._labelEngine1Points.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -652,11 +656,11 @@
             this._labelEngine1Wins.BackColor = System.Drawing.Color.White;
             this._labelEngine1Wins.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine1Wins.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine1Wins.Location = new System.Drawing.Point(190, 25);
+            this._labelEngine1Wins.Location = new System.Drawing.Point(181, 27);
             this._labelEngine1Wins.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1Wins.Name = "_labelEngine1Wins";
             this._labelEngine1Wins.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine1Wins.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine1Wins.Size = new System.Drawing.Size(89, 25);
             this._labelEngine1Wins.TabIndex = 2;
             this._labelEngine1Wins.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -665,11 +669,11 @@
             this._labelEngine1Draws.BackColor = System.Drawing.Color.White;
             this._labelEngine1Draws.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine1Draws.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine1Draws.Location = new System.Drawing.Point(190, 50);
+            this._labelEngine1Draws.Location = new System.Drawing.Point(181, 53);
             this._labelEngine1Draws.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1Draws.Name = "_labelEngine1Draws";
             this._labelEngine1Draws.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine1Draws.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine1Draws.Size = new System.Drawing.Size(89, 25);
             this._labelEngine1Draws.TabIndex = 4;
             this._labelEngine1Draws.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -678,18 +682,18 @@
             this._labelEngine1Losses.BackColor = System.Drawing.Color.White;
             this._labelEngine1Losses.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine1Losses.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine1Losses.Location = new System.Drawing.Point(190, 75);
+            this._labelEngine1Losses.Location = new System.Drawing.Point(181, 79);
             this._labelEngine1Losses.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1Losses.Name = "_labelEngine1Losses";
             this._labelEngine1Losses.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine1Losses.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine1Losses.Size = new System.Drawing.Size(89, 25);
             this._labelEngine1Losses.TabIndex = 6;
             this._labelEngine1Losses.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _emptycell
             // 
             this._emptycell.AutoSize = true;
-            this._emptycell.Location = new System.Drawing.Point(3, 0);
+            this._emptycell.Location = new System.Drawing.Point(4, 1);
             this._emptycell.Name = "_emptycell";
             this._emptycell.Size = new System.Drawing.Size(0, 17);
             this._emptycell.TabIndex = 8;
@@ -698,11 +702,11 @@
             // 
             this._labelWin.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelWin.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelWin.Location = new System.Drawing.Point(0, 25);
+            this._labelWin.Location = new System.Drawing.Point(1, 27);
             this._labelWin.Margin = new System.Windows.Forms.Padding(0);
             this._labelWin.Name = "_labelWin";
             this._labelWin.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelWin.Size = new System.Drawing.Size(95, 25);
+            this._labelWin.Size = new System.Drawing.Size(89, 25);
             this._labelWin.TabIndex = 9;
             this._labelWin.Text = "Win";
             this._labelWin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -712,11 +716,11 @@
             this._labelDraw.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelDraw.Font = new System.Drawing.Font("Verdana", 10F);
             this._labelDraw.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this._labelDraw.Location = new System.Drawing.Point(0, 50);
+            this._labelDraw.Location = new System.Drawing.Point(1, 53);
             this._labelDraw.Margin = new System.Windows.Forms.Padding(0);
             this._labelDraw.Name = "_labelDraw";
             this._labelDraw.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelDraw.Size = new System.Drawing.Size(95, 25);
+            this._labelDraw.Size = new System.Drawing.Size(89, 25);
             this._labelDraw.TabIndex = 10;
             this._labelDraw.Text = "Draw";
             this._labelDraw.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -726,11 +730,11 @@
             this._labelLoss.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelLoss.Font = new System.Drawing.Font("Verdana", 10F);
             this._labelLoss.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this._labelLoss.Location = new System.Drawing.Point(0, 75);
+            this._labelLoss.Location = new System.Drawing.Point(1, 79);
             this._labelLoss.Margin = new System.Windows.Forms.Padding(0);
             this._labelLoss.Name = "_labelLoss";
             this._labelLoss.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelLoss.Size = new System.Drawing.Size(95, 25);
+            this._labelLoss.Size = new System.Drawing.Size(89, 25);
             this._labelLoss.TabIndex = 11;
             this._labelLoss.Text = "Loss";
             this._labelLoss.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -740,11 +744,11 @@
             this._labelPoints.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelPoints.Font = new System.Drawing.Font("Verdana", 10F);
             this._labelPoints.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this._labelPoints.Location = new System.Drawing.Point(0, 100);
+            this._labelPoints.Location = new System.Drawing.Point(1, 105);
             this._labelPoints.Margin = new System.Windows.Forms.Padding(0);
             this._labelPoints.Name = "_labelPoints";
             this._labelPoints.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelPoints.Size = new System.Drawing.Size(95, 25);
+            this._labelPoints.Size = new System.Drawing.Size(89, 25);
             this._labelPoints.TabIndex = 12;
             this._labelPoints.Text = "Score";
             this._labelPoints.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -754,11 +758,11 @@
             this._labelWinPercent.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelWinPercent.Font = new System.Drawing.Font("Verdana", 10F);
             this._labelWinPercent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this._labelWinPercent.Location = new System.Drawing.Point(0, 125);
+            this._labelWinPercent.Location = new System.Drawing.Point(1, 131);
             this._labelWinPercent.Margin = new System.Windows.Forms.Padding(0);
             this._labelWinPercent.Name = "_labelWinPercent";
             this._labelWinPercent.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelWinPercent.Size = new System.Drawing.Size(95, 25);
+            this._labelWinPercent.Size = new System.Drawing.Size(89, 25);
             this._labelWinPercent.TabIndex = 13;
             this._labelWinPercent.Text = "Win%";
             this._labelWinPercent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -768,11 +772,11 @@
             this._labelLos.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelLos.Font = new System.Drawing.Font("Verdana", 10F);
             this._labelLos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this._labelLos.Location = new System.Drawing.Point(0, 150);
+            this._labelLos.Location = new System.Drawing.Point(1, 157);
             this._labelLos.Margin = new System.Windows.Forms.Padding(0);
             this._labelLos.Name = "_labelLos";
             this._labelLos.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this._labelLos.Size = new System.Drawing.Size(95, 25);
+            this._labelLos.Size = new System.Drawing.Size(89, 42);
             this._labelLos.TabIndex = 14;
             this._labelLos.Text = "LOS";
             this._labelLos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -782,26 +786,27 @@
             this._labelEngine1LOS.BackColor = System.Drawing.Color.White;
             this._labelEngine1LOS.Dock = System.Windows.Forms.DockStyle.Fill;
             this._labelEngine1LOS.Font = new System.Drawing.Font("Verdana", 10F);
-            this._labelEngine1LOS.Location = new System.Drawing.Point(190, 150);
+            this._labelEngine1LOS.Location = new System.Drawing.Point(181, 157);
             this._labelEngine1LOS.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1LOS.Name = "_labelEngine1LOS";
             this._labelEngine1LOS.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this._labelEngine1LOS.Size = new System.Drawing.Size(95, 25);
+            this._labelEngine1LOS.Size = new System.Drawing.Size(89, 42);
             this._labelEngine1LOS.TabIndex = 7;
             this._labelEngine1LOS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _panelMatchInfo
             // 
-            this._panelMatchInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this._panelMatchInfo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this._panelMatchInfo.AutoSize = true;
             this._panelMatchInfo.BackColor = System.Drawing.Color.Transparent;
+            this._panelMatchInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelMatchInfo.Controls.Add(this._tableLayoutPanelMatchInfo);
             this._panelMatchInfo.Location = new System.Drawing.Point(2, 357);
             this._panelMatchInfo.Margin = new System.Windows.Forms.Padding(0);
-            this._panelMatchInfo.MaximumSize = new System.Drawing.Size(285, 102);
-            this._panelMatchInfo.MinimumSize = new System.Drawing.Size(285, 102);
+            this._panelMatchInfo.MaximumSize = new System.Drawing.Size(271, 102);
+            this._panelMatchInfo.MinimumSize = new System.Drawing.Size(271, 102);
             this._panelMatchInfo.Name = "_panelMatchInfo";
-            this._panelMatchInfo.Size = new System.Drawing.Size(285, 102);
+            this._panelMatchInfo.Size = new System.Drawing.Size(271, 102);
             this._panelMatchInfo.TabIndex = 20;
             // 
             // _tableLayoutPanelMatchInfo
@@ -1222,7 +1227,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._splitContainerBoard.ForeColor = System.Drawing.Color.Black;
-            this._splitContainerBoard.Location = new System.Drawing.Point(0, 84);
+            this._splitContainerBoard.Location = new System.Drawing.Point(0, 89);
             this._splitContainerBoard.Margin = new System.Windows.Forms.Padding(0);
             this._splitContainerBoard.Name = "_splitContainerBoard";
             this._splitContainerBoard.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -1289,6 +1294,7 @@
             // _panelWhiteSide
             // 
             this._panelWhiteSide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._panelWhiteSide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelWhiteSide.Controls.Add(this._panelEngine0Logo);
             this._panelWhiteSide.Controls.Add(this._panelWhiteTime);
             this._panelWhiteSide.Controls.Add(this._labelEngine0);
@@ -1324,7 +1330,7 @@
             this._panelWhiteTime.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this._panelWhiteTime.Controls.Add(this._labelWhiteTime);
             this._panelWhiteTime.ForeColor = System.Drawing.Color.Black;
-            this._panelWhiteTime.Location = new System.Drawing.Point(398, 17);
+            this._panelWhiteTime.Location = new System.Drawing.Point(396, 16);
             this._panelWhiteTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelWhiteTime.Name = "_panelWhiteTime";
             this._panelWhiteTime.Size = new System.Drawing.Size(100, 50);
@@ -1354,13 +1360,14 @@
             this._labelEngine0.Location = new System.Drawing.Point(119, 17);
             this._labelEngine0.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0.Name = "_labelEngine0";
-            this._labelEngine0.Size = new System.Drawing.Size(279, 50);
+            this._labelEngine0.Size = new System.Drawing.Size(277, 48);
             this._labelEngine0.TabIndex = 8;
             this._labelEngine0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // _panelBlackSide
             // 
             this._panelBlackSide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this._panelBlackSide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelBlackSide.Controls.Add(this._panelEngine1Logo);
             this._panelBlackSide.Controls.Add(this._panelBlackTime);
             this._panelBlackSide.Controls.Add(this._labelEngine1);
@@ -1398,7 +1405,7 @@
             this._panelBlackTime.BackColor = System.Drawing.Color.Transparent;
             this._panelBlackTime.Controls.Add(this._labelBlackTime);
             this._panelBlackTime.ForeColor = System.Drawing.Color.Black;
-            this._panelBlackTime.Location = new System.Drawing.Point(396, 18);
+            this._panelBlackTime.Location = new System.Drawing.Point(394, 17);
             this._panelBlackTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelBlackTime.Name = "_panelBlackTime";
             this._panelBlackTime.Size = new System.Drawing.Size(100, 50);
@@ -1429,7 +1436,7 @@
             this._labelEngine1.Location = new System.Drawing.Point(119, 18);
             this._labelEngine1.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1.Name = "_labelEngine1";
-            this._labelEngine1.Size = new System.Drawing.Size(277, 50);
+            this._labelEngine1.Size = new System.Drawing.Size(275, 48);
             this._labelEngine1.TabIndex = 7;
             this._labelEngine1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
