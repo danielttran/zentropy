@@ -894,6 +894,17 @@ namespace Zentropy.View
 
             _menuItemFlipBoard.Checked = _chessPanel.IsFlipped;
             _chessPanel.Invalidate();
+            SwapSidePanels();
+        }
+
+        /// <summary>
+        /// Panels that are at the top and bottom of the board showing engine logos, names, and times
+        /// </summary>
+        private void SwapSidePanels()
+        {
+            var blackLocation = _panelBlackSide.Location;
+            _panelBlackSide.Location = _panelWhiteSide.Location;
+            _panelWhiteSide.Location = blackLocation;
         }
 
         private void OnButtonSoundClick(object sender, EventArgs e)

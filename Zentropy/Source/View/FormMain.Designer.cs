@@ -287,9 +287,9 @@
             // _splitContainer2.Panel2
             // 
             this._splitContainer2.Panel2.BackColor = System.Drawing.Color.Transparent;
+            this._splitContainer2.Panel2.Controls.Add(this._panelBlackSide);
             this._splitContainer2.Panel2.Controls.Add(this._panelWhiteSide);
             this._splitContainer2.Panel2.Controls.Add(this._splitContainerBoard);
-            this._splitContainer2.Panel2.Controls.Add(this._panelBlackSide);
             this._splitContainer2.Size = new System.Drawing.Size(748, 876);
             this._splitContainer2.SplitterDistance = 258;
             this._splitContainer2.TabIndex = 0;
@@ -1247,7 +1247,7 @@
             // 
             this._panelEngine0Logo.BackColor = System.Drawing.Color.Transparent;
             this._panelEngine0Logo.Controls.Add(this._labelEngine0Logo);
-            this._panelEngine0Logo.Location = new System.Drawing.Point(19, 12);
+            this._panelEngine0Logo.Location = new System.Drawing.Point(19, 11);
             this._panelEngine0Logo.Margin = new System.Windows.Forms.Padding(0);
             this._panelEngine0Logo.Name = "_panelEngine0Logo";
             this._panelEngine0Logo.Size = new System.Drawing.Size(100, 50);
@@ -1269,7 +1269,7 @@
             this._panelWhiteTime.BackColor = System.Drawing.Color.Transparent;
             this._panelWhiteTime.Controls.Add(this._labelWhiteTime);
             this._panelWhiteTime.ForeColor = System.Drawing.Color.Black;
-            this._panelWhiteTime.Location = new System.Drawing.Point(395, 12);
+            this._panelWhiteTime.Location = new System.Drawing.Point(385, 11);
             this._panelWhiteTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelWhiteTime.Name = "_panelWhiteTime";
             this._panelWhiteTime.Size = new System.Drawing.Size(100, 50);
@@ -1296,7 +1296,7 @@
             this._labelEngine0.BackColor = System.Drawing.Color.Transparent;
             this._labelEngine0.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._labelEngine0.ForeColor = System.Drawing.Color.Black;
-            this._labelEngine0.Location = new System.Drawing.Point(119, 21);
+            this._labelEngine0.Location = new System.Drawing.Point(120, 20);
             this._labelEngine0.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0.Name = "_labelEngine0";
             this._labelEngine0.Size = new System.Drawing.Size(273, 33);
@@ -1312,7 +1312,7 @@
             this._splitContainerBoard.ForeColor = System.Drawing.Color.Black;
             this._splitContainerBoard.Location = new System.Drawing.Point(0, 90);
             this._splitContainerBoard.Margin = new System.Windows.Forms.Padding(0);
-            this._splitContainerBoard.MaximumSize = new System.Drawing.Size(520, 550);
+            this._splitContainerBoard.MaximumSize = new System.Drawing.Size(720, 750);
             this._splitContainerBoard.MinimumSize = new System.Drawing.Size(520, 550);
             this._splitContainerBoard.Name = "_splitContainerBoard";
             this._splitContainerBoard.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -1403,7 +1403,7 @@
             this._panelBlackSide.Controls.Add(this._panelEngine1Logo);
             this._panelBlackSide.Controls.Add(this._panelBlackTime);
             this._panelBlackSide.Controls.Add(this._labelEngine1);
-            this._panelBlackSide.Location = new System.Drawing.Point(0, 8);
+            this._panelBlackSide.Location = new System.Drawing.Point(0, 0);
             this._panelBlackSide.Margin = new System.Windows.Forms.Padding(0);
             this._panelBlackSide.MaximumSize = new System.Drawing.Size(522, 70);
             this._panelBlackSide.MinimumSize = new System.Drawing.Size(522, 70);
@@ -1415,7 +1415,7 @@
             // 
             this._panelEngine1Logo.BackColor = System.Drawing.Color.Transparent;
             this._panelEngine1Logo.Controls.Add(this._labelEngine1Logo);
-            this._panelEngine1Logo.Location = new System.Drawing.Point(19, 18);
+            this._panelEngine1Logo.Location = new System.Drawing.Point(19, 11);
             this._panelEngine1Logo.Margin = new System.Windows.Forms.Padding(0);
             this._panelEngine1Logo.Name = "_panelEngine1Logo";
             this._panelEngine1Logo.Size = new System.Drawing.Size(100, 50);
@@ -1438,7 +1438,7 @@
             this._panelBlackTime.BackColor = System.Drawing.Color.Transparent;
             this._panelBlackTime.Controls.Add(this._labelBlackTime);
             this._panelBlackTime.ForeColor = System.Drawing.Color.Black;
-            this._panelBlackTime.Location = new System.Drawing.Point(392, 11);
+            this._panelBlackTime.Location = new System.Drawing.Point(385, 11);
             this._panelBlackTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelBlackTime.Name = "_panelBlackTime";
             this._panelBlackTime.Size = new System.Drawing.Size(100, 50);
@@ -1466,10 +1466,10 @@
             this._labelEngine1.BackColor = System.Drawing.Color.Transparent;
             this._labelEngine1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._labelEngine1.ForeColor = System.Drawing.Color.Black;
-            this._labelEngine1.Location = new System.Drawing.Point(119, 18);
+            this._labelEngine1.Location = new System.Drawing.Point(120, 20);
             this._labelEngine1.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1.Name = "_labelEngine1";
-            this._labelEngine1.Size = new System.Drawing.Size(273, 36);
+            this._labelEngine1.Size = new System.Drawing.Size(273, 33);
             this._labelEngine1.TabIndex = 7;
             this._labelEngine1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
