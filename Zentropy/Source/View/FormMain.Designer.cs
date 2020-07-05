@@ -1228,8 +1228,7 @@
             // 
             // _panelWhiteSide
             // 
-            this._panelWhiteSide.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this._panelWhiteSide.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._panelWhiteSide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this._panelWhiteSide.BackColor = System.Drawing.Color.Transparent;
@@ -1239,8 +1238,9 @@
             this._panelWhiteSide.Controls.Add(this._labelEngine0);
             this._panelWhiteSide.Location = new System.Drawing.Point(0, 750);
             this._panelWhiteSide.Margin = new System.Windows.Forms.Padding(0);
+            this._panelWhiteSide.MaximumSize = new System.Drawing.Size(522, 87);
             this._panelWhiteSide.Name = "_panelWhiteSide";
-            this._panelWhiteSide.Size = new System.Drawing.Size(522, 90);
+            this._panelWhiteSide.Size = new System.Drawing.Size(522, 87);
             this._panelWhiteSide.TabIndex = 1;
             // 
             // _panelEngine0Logo
@@ -1268,7 +1268,7 @@
             this._panelWhiteTime.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this._panelWhiteTime.Controls.Add(this._labelWhiteTime);
             this._panelWhiteTime.ForeColor = System.Drawing.Color.Black;
-            this._panelWhiteTime.Location = new System.Drawing.Point(390, 21);
+            this._panelWhiteTime.Location = new System.Drawing.Point(390, 19);
             this._panelWhiteTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelWhiteTime.Name = "_panelWhiteTime";
             this._panelWhiteTime.Size = new System.Drawing.Size(100, 50);
@@ -1298,7 +1298,7 @@
             this._labelEngine0.Location = new System.Drawing.Point(119, 17);
             this._labelEngine0.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0.Name = "_labelEngine0";
-            this._labelEngine0.Size = new System.Drawing.Size(271, 51);
+            this._labelEngine0.Size = new System.Drawing.Size(271, 48);
             this._labelEngine0.TabIndex = 8;
             this._labelEngine0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1311,6 +1311,7 @@
             this._splitContainerBoard.ForeColor = System.Drawing.Color.Black;
             this._splitContainerBoard.Location = new System.Drawing.Point(0, 111);
             this._splitContainerBoard.Margin = new System.Windows.Forms.Padding(0);
+            this._splitContainerBoard.MaximumSize = new System.Drawing.Size(520, 639);
             this._splitContainerBoard.Name = "_splitContainerBoard";
             this._splitContainerBoard.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -1325,7 +1326,7 @@
             this._splitContainerBoard.Panel2.Controls.Add(this._panelResultBox);
             this._splitContainerBoard.Panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._toolTipExit.SetToolTip(this._splitContainerBoard.Panel2, "Close and exit the application");
-            this._splitContainerBoard.Size = new System.Drawing.Size(527, 639);
+            this._splitContainerBoard.Size = new System.Drawing.Size(520, 639);
             this._splitContainerBoard.SplitterDistance = 38;
             this._splitContainerBoard.SplitterWidth = 3;
             this._splitContainerBoard.TabIndex = 2;
@@ -1337,7 +1338,7 @@
             this._panelResultBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelResultBox.Controls.Add(this._panelTermination);
             this._panelResultBox.Controls.Add(this._panelResult);
-            this._panelResultBox.Location = new System.Drawing.Point(180, 287);
+            this._panelResultBox.Location = new System.Drawing.Point(177, 287);
             this._panelResultBox.Margin = new System.Windows.Forms.Padding(0);
             this._panelResultBox.Name = "_panelResultBox";
             this._panelResultBox.Size = new System.Drawing.Size(186, 53);
@@ -1401,6 +1402,7 @@
             this._panelBlackSide.Controls.Add(this._labelEngine1);
             this._panelBlackSide.Location = new System.Drawing.Point(0, 8);
             this._panelBlackSide.Margin = new System.Windows.Forms.Padding(0);
+            this._panelBlackSide.MaximumSize = new System.Drawing.Size(522, 87);
             this._panelBlackSide.Name = "_panelBlackSide";
             this._panelBlackSide.Size = new System.Drawing.Size(522, 87);
             this._panelBlackSide.TabIndex = 0;
