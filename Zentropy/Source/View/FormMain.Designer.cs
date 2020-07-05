@@ -239,9 +239,9 @@
             // 
             // _splitContainer1.Panel2
             // 
-            this._splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this._splitContainer1.Panel2.BackColor = System.Drawing.Color.Transparent;
             this._splitContainer1.Panel2.Controls.Add(this._dataGridViewEvaluation);
-            this._splitContainer1.Size = new System.Drawing.Size(1162, 917);
+            this._splitContainer1.Size = new System.Drawing.Size(1082, 917);
             this._splitContainer1.SplitterDistance = 887;
             this._splitContainer1.TabIndex = 2;
             // 
@@ -265,8 +265,8 @@
             this._splitContainerMain.Panel2.BackColor = System.Drawing.Color.Transparent;
             this._splitContainerMain.Panel2.Controls.Add(this._panelRight);
             this._splitContainerMain.Panel2.Tag = "Right Panel";
-            this._splitContainerMain.Size = new System.Drawing.Size(1162, 887);
-            this._splitContainerMain.SplitterDistance = 804;
+            this._splitContainerMain.Size = new System.Drawing.Size(1082, 887);
+            this._splitContainerMain.SplitterDistance = 748;
             this._splitContainerMain.TabIndex = 3;
             // 
             // _splitContainer2
@@ -290,8 +290,8 @@
             this._splitContainer2.Panel2.Controls.Add(this._panelWhiteSide);
             this._splitContainer2.Panel2.Controls.Add(this._splitContainerBoard);
             this._splitContainer2.Panel2.Controls.Add(this._panelBlackSide);
-            this._splitContainer2.Size = new System.Drawing.Size(804, 882);
-            this._splitContainer2.SplitterDistance = 278;
+            this._splitContainer2.Size = new System.Drawing.Size(748, 876);
+            this._splitContainer2.SplitterDistance = 258;
             this._splitContainer2.TabIndex = 0;
             // 
             // _panelLeft
@@ -1232,22 +1232,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this._panelWhiteSide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this._panelWhiteSide.BackColor = System.Drawing.Color.Transparent;
-            this._panelWhiteSide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelWhiteSide.Controls.Add(this._panelEngine0Logo);
             this._panelWhiteSide.Controls.Add(this._panelWhiteTime);
             this._panelWhiteSide.Controls.Add(this._labelEngine0);
-            this._panelWhiteSide.Location = new System.Drawing.Point(0, 750);
+            this._panelWhiteSide.Location = new System.Drawing.Point(0, 600);
             this._panelWhiteSide.Margin = new System.Windows.Forms.Padding(0);
-            this._panelWhiteSide.MaximumSize = new System.Drawing.Size(522, 87);
+            this._panelWhiteSide.MaximumSize = new System.Drawing.Size(522, 70);
+            this._panelWhiteSide.MinimumSize = new System.Drawing.Size(522, 70);
             this._panelWhiteSide.Name = "_panelWhiteSide";
-            this._panelWhiteSide.Size = new System.Drawing.Size(522, 87);
+            this._panelWhiteSide.Size = new System.Drawing.Size(522, 70);
             this._panelWhiteSide.TabIndex = 1;
             // 
             // _panelEngine0Logo
             // 
             this._panelEngine0Logo.BackColor = System.Drawing.Color.Transparent;
             this._panelEngine0Logo.Controls.Add(this._labelEngine0Logo);
-            this._panelEngine0Logo.Location = new System.Drawing.Point(19, 18);
+            this._panelEngine0Logo.Location = new System.Drawing.Point(19, 12);
             this._panelEngine0Logo.Margin = new System.Windows.Forms.Padding(0);
             this._panelEngine0Logo.Name = "_panelEngine0Logo";
             this._panelEngine0Logo.Size = new System.Drawing.Size(100, 50);
@@ -1266,9 +1266,10 @@
             // _panelWhiteTime
             // 
             this._panelWhiteTime.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this._panelWhiteTime.BackColor = System.Drawing.Color.Transparent;
             this._panelWhiteTime.Controls.Add(this._labelWhiteTime);
             this._panelWhiteTime.ForeColor = System.Drawing.Color.Black;
-            this._panelWhiteTime.Location = new System.Drawing.Point(390, 19);
+            this._panelWhiteTime.Location = new System.Drawing.Point(395, 12);
             this._panelWhiteTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelWhiteTime.Name = "_panelWhiteTime";
             this._panelWhiteTime.Size = new System.Drawing.Size(100, 50);
@@ -1295,10 +1296,10 @@
             this._labelEngine0.BackColor = System.Drawing.Color.Transparent;
             this._labelEngine0.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._labelEngine0.ForeColor = System.Drawing.Color.Black;
-            this._labelEngine0.Location = new System.Drawing.Point(119, 17);
+            this._labelEngine0.Location = new System.Drawing.Point(119, 21);
             this._labelEngine0.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine0.Name = "_labelEngine0";
-            this._labelEngine0.Size = new System.Drawing.Size(271, 48);
+            this._labelEngine0.Size = new System.Drawing.Size(273, 33);
             this._labelEngine0.TabIndex = 8;
             this._labelEngine0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1309,9 +1310,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this._splitContainerBoard.BackColor = System.Drawing.Color.Transparent;
             this._splitContainerBoard.ForeColor = System.Drawing.Color.Black;
-            this._splitContainerBoard.Location = new System.Drawing.Point(0, 111);
+            this._splitContainerBoard.Location = new System.Drawing.Point(0, 90);
             this._splitContainerBoard.Margin = new System.Windows.Forms.Padding(0);
-            this._splitContainerBoard.MaximumSize = new System.Drawing.Size(520, 639);
+            this._splitContainerBoard.MaximumSize = new System.Drawing.Size(520, 550);
+            this._splitContainerBoard.MinimumSize = new System.Drawing.Size(520, 550);
             this._splitContainerBoard.Name = "_splitContainerBoard";
             this._splitContainerBoard.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -1326,7 +1328,7 @@
             this._splitContainerBoard.Panel2.Controls.Add(this._panelResultBox);
             this._splitContainerBoard.Panel2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._toolTipExit.SetToolTip(this._splitContainerBoard.Panel2, "Close and exit the application");
-            this._splitContainerBoard.Size = new System.Drawing.Size(520, 639);
+            this._splitContainerBoard.Size = new System.Drawing.Size(520, 550);
             this._splitContainerBoard.SplitterDistance = 38;
             this._splitContainerBoard.SplitterWidth = 3;
             this._splitContainerBoard.TabIndex = 2;
@@ -1335,10 +1337,11 @@
             // _panelResultBox
             // 
             this._panelResultBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._panelResultBox.BackColor = System.Drawing.Color.Transparent;
             this._panelResultBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._panelResultBox.Controls.Add(this._panelTermination);
             this._panelResultBox.Controls.Add(this._panelResult);
-            this._panelResultBox.Location = new System.Drawing.Point(177, 287);
+            this._panelResultBox.Location = new System.Drawing.Point(177, 243);
             this._panelResultBox.Margin = new System.Windows.Forms.Padding(0);
             this._panelResultBox.Name = "_panelResultBox";
             this._panelResultBox.Size = new System.Drawing.Size(186, 53);
@@ -1396,15 +1399,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._panelBlackSide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this._panelBlackSide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._panelBlackSide.BackColor = System.Drawing.Color.Transparent;
             this._panelBlackSide.Controls.Add(this._panelEngine1Logo);
             this._panelBlackSide.Controls.Add(this._panelBlackTime);
             this._panelBlackSide.Controls.Add(this._labelEngine1);
             this._panelBlackSide.Location = new System.Drawing.Point(0, 8);
             this._panelBlackSide.Margin = new System.Windows.Forms.Padding(0);
-            this._panelBlackSide.MaximumSize = new System.Drawing.Size(522, 87);
+            this._panelBlackSide.MaximumSize = new System.Drawing.Size(522, 70);
+            this._panelBlackSide.MinimumSize = new System.Drawing.Size(522, 70);
             this._panelBlackSide.Name = "_panelBlackSide";
-            this._panelBlackSide.Size = new System.Drawing.Size(522, 87);
+            this._panelBlackSide.Size = new System.Drawing.Size(522, 70);
             this._panelBlackSide.TabIndex = 0;
             // 
             // _panelEngine1Logo
@@ -1434,7 +1438,7 @@
             this._panelBlackTime.BackColor = System.Drawing.Color.Transparent;
             this._panelBlackTime.Controls.Add(this._labelBlackTime);
             this._panelBlackTime.ForeColor = System.Drawing.Color.Black;
-            this._panelBlackTime.Location = new System.Drawing.Point(390, 18);
+            this._panelBlackTime.Location = new System.Drawing.Point(392, 11);
             this._panelBlackTime.Margin = new System.Windows.Forms.Padding(0);
             this._panelBlackTime.Name = "_panelBlackTime";
             this._panelBlackTime.Size = new System.Drawing.Size(100, 50);
@@ -1465,7 +1469,7 @@
             this._labelEngine1.Location = new System.Drawing.Point(119, 18);
             this._labelEngine1.Margin = new System.Windows.Forms.Padding(0);
             this._labelEngine1.Name = "_labelEngine1";
-            this._labelEngine1.Size = new System.Drawing.Size(271, 51);
+            this._labelEngine1.Size = new System.Drawing.Size(273, 36);
             this._labelEngine1.TabIndex = 7;
             this._labelEngine1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1479,10 +1483,10 @@
             this._panelRight.Controls.Add(this._tableEvaluationChart);
             this._panelRight.Controls.Add(this._dataGridViewMoves);
             this._panelRight.Font = new System.Drawing.Font("Verdana", 8F);
-            this._panelRight.Location = new System.Drawing.Point(1, 0);
+            this._panelRight.Location = new System.Drawing.Point(13, 0);
             this._panelRight.Margin = new System.Windows.Forms.Padding(0);
             this._panelRight.Name = "_panelRight";
-            this._panelRight.Size = new System.Drawing.Size(353, 887);
+            this._panelRight.Size = new System.Drawing.Size(317, 887);
             this._panelRight.TabIndex = 5;
             // 
             // _tableEvaluationChart
@@ -1608,7 +1612,7 @@
             this._dataGridViewEvaluation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this._dataGridViewEvaluation.ShowEditingIcon = false;
             this._dataGridViewEvaluation.ShowRowErrors = false;
-            this._dataGridViewEvaluation.Size = new System.Drawing.Size(1162, 26);
+            this._dataGridViewEvaluation.Size = new System.Drawing.Size(1082, 26);
             this._dataGridViewEvaluation.TabIndex = 1;
             // 
             // _menuItemGame
@@ -1870,7 +1874,7 @@
             this._menuStripMain.Name = "_menuStripMain";
             this._menuStripMain.Padding = new System.Windows.Forms.Padding(0);
             this._menuStripMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this._menuStripMain.Size = new System.Drawing.Size(1162, 42);
+            this._menuStripMain.Size = new System.Drawing.Size(1082, 42);
             this._menuStripMain.TabIndex = 1;
             // 
             // _menuItemPGN
@@ -1958,7 +1962,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1172, 969);
+            this.ClientSize = new System.Drawing.Size(1092, 969);
             this.Controls.Add(this._splitContainer1);
             this.Controls.Add(this._menuStripMain);
             this.DoubleBuffered = true;

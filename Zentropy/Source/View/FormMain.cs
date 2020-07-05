@@ -192,9 +192,9 @@ namespace Zentropy.View
             {
                 Cursor = Cursors.Hand,
                 BackColor = SystemColors.Control,
-                Dock = DockStyle.Fill,
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right | AnchorStyles.Left,
                 Location = new Point(0, 0),
-                Size = new Size(787, 403),
+                Size = new Size(500, 500),
                 Game = _vm.Game
             };
             _chessPanel.BackColor = Color.Transparent;
